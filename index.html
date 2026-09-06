@@ -1,0 +1,2372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Anand Hardware | Hardware & Building Supplies in Biratnagar</title>
+
+    <meta name="description"
+        content="Anand Hardware in Biratnagar 09, Main Road South. Hardware, tools, plumbing, electrical and building supplies.">
+
+    <meta name="keywords"
+        content="Anand Hardware, hardware shop Biratnagar, hardware store Biratnagar, tools, plumbing, electrical, building materials">
+
+    <meta name="theme-color" content="#b34a24">
+
+    <style>
+
+        /* =========================
+           BASIC SETTINGS
+        ========================= */
+
+        :root {
+            --primary: #b34a24;
+            --primary-dark: #8d3518;
+            --orange: #f2a33a;
+
+            --dark: #202428;
+            --text: #30363a;
+            --gray: #697279;
+
+            --light: #f7f6f3;
+            --white: #ffffff;
+            --border: #e5e5e2;
+
+            --radius: 14px;
+            --max-width: 1180px;
+
+            --shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        }
+
+
+        /* =========================
+           RESET
+        ========================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: var(--text);
+            background: var(--white);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        .container {
+            width: min(var(--max-width), calc(100% - 30px));
+            margin: auto;
+        }
+
+
+        /* =========================
+           TOP BAR
+        ========================= */
+
+        .topbar {
+            background: var(--dark);
+            color: white;
+            font-size: 13px;
+        }
+
+        .topbar .container {
+            min-height: 38px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .topbar a {
+            font-weight: bold;
+        }
+
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: white;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .header-inner {
+            height: 74px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-box {
+            width: 44px;
+            height: 44px;
+            background: var(--primary);
+            color: white;
+            border-radius: 10px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .logo-text strong {
+            display: block;
+            font-size: 18px;
+            color: var(--dark);
+        }
+
+        .logo-text small {
+            display: block;
+            color: var(--gray);
+            font-size: 9px;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        nav a {
+            font-size: 14px;
+            font-weight: bold;
+            color: var(--text);
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        .nav-button {
+            background: var(--primary);
+            color: white !important;
+            padding: 10px 16px;
+            border-radius: 8px;
+        }
+
+        .menu-button {
+            display: none;
+            background: none;
+            border: 0;
+            font-size: 28px;
+            cursor: pointer;
+        }
+
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(15, 18, 20, .88),
+                    rgba(15, 18, 20, .55),
+                    rgba(15, 18, 20, .20)
+                ),
+                url("https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=1800&q=85")
+                center / cover;
+        }
+
+        .hero-content {
+            max-width: 700px;
+            color: white;
+            padding: 80px 0;
+        }
+
+        .hero-label {
+            display: inline-block;
+            background: rgba(255,255,255,.12);
+            border: 1px solid rgba(255,255,255,.25);
+
+            padding: 7px 12px;
+            border-radius: 30px;
+
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .hero h1 {
+            font-size: clamp(42px, 6vw, 70px);
+            line-height: 1.05;
+            margin: 20px 0;
+        }
+
+        .hero p {
+            max-width: 620px;
+            color: #e8e8e8;
+            font-size: 17px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 28px;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 12px 18px;
+            border-radius: 9px;
+
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .button-primary {
+            background: var(--orange);
+            color: #222;
+        }
+
+        .button-white {
+            background: white;
+            color: var(--dark);
+        }
+
+        .button-outline {
+            border: 1px solid rgba(255,255,255,.4);
+            color: white;
+        }
+
+
+        /* =========================
+           QUICK INFO
+        ========================= */
+
+        .quick-info {
+            background: white;
+            margin-top: -35px;
+            position: relative;
+            z-index: 2;
+
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+
+            padding: 22px;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .quick-item {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .quick-icon {
+            width: 42px;
+            height: 42px;
+
+            border-radius: 10px;
+            background: #fff0e7;
+            color: var(--primary);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .quick-item strong {
+            display: block;
+            font-size: 14px;
+        }
+
+        .quick-item span {
+            display: block;
+            font-size: 12px;
+            color: var(--gray);
+        }
+
+
+        /* =========================
+           GENERAL SECTION
+        ========================= */
+
+        section {
+            padding: 80px 0;
+        }
+
+        .light-section {
+            background: var(--light);
+        }
+
+        .section-title {
+            margin-bottom: 35px;
+        }
+
+        .section-label {
+            color: var(--primary);
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .section-title h2 {
+            color: var(--dark);
+            font-size: clamp(30px, 4vw, 42px);
+            margin-top: 6px;
+        }
+
+        .section-title p {
+            max-width: 600px;
+            color: var(--gray);
+            margin-top: 10px;
+        }
+
+
+        /* =========================
+           CATEGORIES
+        ========================= */
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+        }
+
+        .category {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            overflow: hidden;
+
+            transition: .2s;
+        }
+
+        .category:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow);
+        }
+
+        .category img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .category-content {
+            padding: 18px;
+        }
+
+        .category h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .category p {
+            font-size: 13px;
+            color: var(--gray);
+        }
+
+
+        /* =========================
+           PRODUCTS
+        ========================= */
+
+        .filter-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 25px;
+        }
+
+        .filter-button {
+            border: 1px solid var(--border);
+            background: white;
+
+            padding: 9px 15px;
+            border-radius: 30px;
+
+            font-size: 12px;
+            font-weight: bold;
+
+            cursor: pointer;
+        }
+
+        .filter-button.active,
+        .filter-button:hover {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+        }
+
+        .product {
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            overflow: hidden;
+            background: white;
+        }
+
+        .product.hide {
+            display: none;
+        }
+
+        .product-image {
+            height: 190px;
+            overflow: hidden;
+            background: #eee;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: .3s;
+        }
+
+        .product:hover img {
+            transform: scale(1.04);
+        }
+
+        .product-content {
+            padding: 17px;
+        }
+
+        .product-tag {
+            display: inline-block;
+            background: #fff0e7;
+            color: var(--primary);
+
+            padding: 4px 8px;
+            border-radius: 5px;
+
+            font-size: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .product h3 {
+            font-size: 16px;
+            margin: 9px 0 4px;
+        }
+
+        .product p {
+            font-size: 12px;
+            color: var(--gray);
+            margin-bottom: 12px;
+        }
+
+        .product-link {
+            color: var(--primary);
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+
+        /* =========================
+           ABOUT
+        ========================= */
+
+        .about {
+            background: var(--dark);
+            color: white;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 55px;
+            align-items: center;
+        }
+
+        .about .section-label {
+            color: #f2b86c;
+        }
+
+        .about h2 {
+            font-size: clamp(30px, 4vw, 42px);
+            margin-top: 8px;
+        }
+
+        .about p {
+            color: #cbd0d3;
+            margin-top: 18px;
+            font-size: 15px;
+        }
+
+        .about-list {
+            margin-top: 25px;
+            display: grid;
+            gap: 12px;
+        }
+
+        .about-list div {
+            display: flex;
+            gap: 10px;
+            color: #e6e8e9;
+            font-size: 14px;
+        }
+
+        .check {
+            color: var(--orange);
+            font-weight: bold;
+        }
+
+        .about-image {
+            border-radius: 18px;
+            overflow: hidden;
+        }
+
+        .about-image img {
+            height: 450px;
+            object-fit: cover;
+        }
+
+
+        /* =========================
+           SERVICES
+        ========================= */
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .service {
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 25px;
+            background: white;
+        }
+
+        .service-icon {
+            width: 46px;
+            height: 46px;
+
+            background: #fff0e7;
+            color: var(--primary);
+
+            border-radius: 10px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .service h3 {
+            font-size: 17px;
+            margin-bottom: 6px;
+        }
+
+        .service p {
+            color: var(--gray);
+            font-size: 13px;
+        }
+
+
+        /* =========================
+           CTA
+        ========================= */
+
+        .cta {
+            padding-top: 0;
+        }
+
+        .cta-box {
+            background: var(--primary);
+            color: white;
+
+            border-radius: 18px;
+            padding: 40px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .cta-box h2 {
+            font-size: 30px;
+        }
+
+        .cta-box p {
+            color: #f5dcd2;
+            margin-top: 5px;
+        }
+
+
+        /* =========================
+           CONTACT
+        ========================= */
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: .9fr 1.1fr;
+            gap: 20px;
+        }
+
+        .contact-card,
+        .map-card {
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            overflow: hidden;
+            background: white;
+        }
+
+        .contact-card {
+            padding: 25px;
+        }
+
+        .contact-item {
+            display: flex;
+            gap: 12px;
+
+            padding: 16px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .contact-item:last-child {
+            border-bottom: 0;
+        }
+
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+
+            flex-shrink: 0;
+
+            background: #fff0e7;
+            color: var(--primary);
+
+            border-radius: 9px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contact-item strong {
+            display: block;
+            font-size: 14px;
+        }
+
+        .contact-item span,
+        .contact-item a {
+            color: var(--gray);
+            font-size: 13px;
+        }
+
+        .map-card iframe {
+            width: 100%;
+            height: 100%;
+            min-height: 350px;
+            border: 0;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            background: #171b1e;
+            color: #b9c0c4;
+            padding: 50px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr;
+            gap: 40px;
+        }
+
+        footer .logo-text strong {
+            color: white;
+        }
+
+        footer .logo-text small {
+            color: #888f93;
+        }
+
+        footer p {
+            font-size: 13px;
+            margin-top: 15px;
+            max-width: 400px;
+        }
+
+        footer h3 {
+            color: white;
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+
+        footer ul {
+            list-style: none;
+            display: grid;
+            gap: 7px;
+            font-size: 13px;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+        .copyright {
+            border-top: 1px solid #303538;
+            margin-top: 35px;
+            padding-top: 18px;
+
+            display: flex;
+            justify-content: space-between;
+
+            font-size: 11px;
+        }
+
+
+        /* =========================
+           FLOATING CALL BUTTON
+        ========================= */
+
+        .call-button {
+            position: fixed;
+            right: 18px;
+            bottom: 18px;
+
+            width: 55px;
+            height: 55px;
+
+            background: var(--primary);
+            color: white;
+
+            border-radius: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 22px;
+
+            box-shadow: 0 8px 25px rgba(0,0,0,.2);
+
+            z-index: 90;
+        }
+
+
+        /* =========================
+           TABLET
+        ========================= */
+
+        @media (max-width: 950px) {
+
+            nav {
+                display: none;
+
+                position: absolute;
+                top: 74px;
+                left: 0;
+                right: 0;
+
+                background: white;
+                border-bottom: 1px solid var(--border);
+
+                padding: 20px;
+
+                flex-direction: column;
+                align-items: stretch;
+
+                gap: 15px;
+            }
+
+            nav.open {
+                display: flex;
+            }
+
+            .menu-button {
+                display: block;
+            }
+
+            .category-grid,
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .service-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .about-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .quick-info {
+                grid-template-columns: 1fr;
+            }
+
+            .about-image img {
+                height: 350px;
+            }
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 620px) {
+
+            .container {
+                width: calc(100% - 24px);
+            }
+
+            .topbar .container {
+                justify-content: center;
+            }
+
+            .topbar span {
+                display: none;
+            }
+
+            .header-inner {
+                height: 68px;
+            }
+
+            nav {
+                top: 68px;
+            }
+
+            .hero {
+                min-height: 580px;
+            }
+
+            .hero-content {
+                padding: 70px 0;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+            }
+
+            .hero p {
+                font-size: 15px;
+            }
+
+            .category-grid,
+            .product-grid,
+            .service-grid {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 60px 0;
+            }
+
+            .cta-box {
+                padding: 28px 22px;
+                display: block;
+            }
+
+            .cta-box h2 {
+                font-size: 26px;
+            }
+
+            .cta-box .button {
+                margin-top: 18px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .copyright {
+                display: block;
+            }
+
+            .copyright span {
+                display: block;
+                margin-top: 5px;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     TOP BAR
+========================= -->
+
+<div class="topbar">
+
+    <div class="container">
+
+        <span>
+            Quality hardware and building supplies in Biratnagar
+        </span>
+
+        <a href="tel:+9779705020251">
+            ☎ 9708000000
+        </a>
+
+    </div>
+
+</div>
+
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+    <div class="container header-inner">
+
+        <a href="#home" class="logo">
+
+            <div class="logo-box">
+                AH
+            </div>
+
+            <div class="logo-text">
+
+                <strong>
+                    Anand Hardware
+                </strong>
+
+                <small>
+                    HARDWARE & BUILDING SUPPLIES
+                </small>
+
+            </div>
+
+        </a>
+
+
+        <button
+            class="menu-button"
+            onclick="toggleMenu()"
+            aria-label="Open menu">
+
+            ☰
+
+        </button>
+
+
+        <nav id="nav">
+
+            <a href="#home" onclick="closeMenu()">
+                Home
+            </a>
+
+            <a href="#categories" onclick="closeMenu()">
+                Categories
+            </a>
+
+            <a href="#products" onclick="closeMenu()">
+                Products
+            </a>
+
+            <a href="#about" onclick="closeMenu()">
+                About
+            </a>
+
+            <a href="#contact" onclick="closeMenu()">
+                Contact
+            </a>
+
+            <a
+                href="tel:+9779705020251"
+                class="nav-button">
+
+                Call Now
+
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<main>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero" id="home">
+
+    <div class="container">
+
+        <div class="hero-content">
+
+            <span class="hero-label">
+                Your Local Hardware Store
+            </span>
+
+            <h1>
+                Everything You Need to Build & Repair
+            </h1>
+
+            <p>
+                Anand Hardware provides tools, hardware,
+                plumbing, electrical and building supplies
+                for homes, businesses and construction work
+                in Biratnagar.
+            </p>
+
+
+            <div class="buttons">
+
+                <a
+                    href="#products"
+                    class="button button-primary">
+
+                    View Products →
+
+                </a>
+
+
+                <a
+                    href="tel:+9779705020251"
+                    class="button button-white">
+
+                    ☎ 9708000000
+
+                </a>
+
+
+                <a
+                    href="https://wa.me/9779705020251"
+                    target="_blank"
+                    rel="noopener"
+                    class="button button-outline">
+
+                    WhatsApp
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     QUICK INFO
+========================= -->
+
+<div class="container">
+
+    <div class="quick-info">
+
+        <div class="quick-item">
+
+            <div class="quick-icon">
+                ✓
+            </div>
+
+            <div>
+
+                <strong>
+                    Quality Products
+                </strong>
+
+                <span>
+                    Reliable products for your work
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="quick-item">
+
+            <div class="quick-icon">
+                ▣
+            </div>
+
+            <div>
+
+                <strong>
+                    Wide Range
+                </strong>
+
+                <span>
+                    Tools, hardware and supplies
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="quick-item">
+
+            <div class="quick-icon">
+                📍
+            </div>
+
+            <div>
+
+                <strong>
+                    Easy to Find
+                </strong>
+
+                <span>
+                    Main Road South, Biratnagar 09
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- =========================
+     CATEGORIES
+========================= -->
+
+<section
+    class="light-section"
+    id="categories">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span class="section-label">
+                What We Sell
+            </span>
+
+            <h2>
+                Shop by Category
+            </h2>
+
+            <p>
+                Find the products you need for home repair,
+                maintenance and construction work.
+            </p>
+
+        </div>
+
+
+        <div class="category-grid">
+
+
+            <article class="category">
+
+                <img
+                    src="https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=900&q=80"
+                    alt="Hardware tools">
+
+                <div class="category-content">
+
+                    <h3>
+                        Tools & Hardware
+                    </h3>
+
+                    <p>
+                        Hand tools, fasteners, fittings
+                        and everyday hardware.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="category">
+
+                <img
+                    src="https://images.unsplash.com/photo-1607400201515-c2c41c07d8f7?auto=format&fit=crop&w=900&q=80"
+                    alt="Plumbing supplies">
+
+                <div class="category-content">
+
+                    <h3>
+                        Plumbing
+                    </h3>
+
+                    <p>
+                        Pipes, fittings, valves and
+                        plumbing accessories.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="category">
+
+                <img
+                    src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&q=80"
+                    alt="Electrical supplies">
+
+                <div class="category-content">
+
+                    <h3>
+                        Electrical
+                    </h3>
+
+                    <p>
+                        Electrical accessories and
+                        installation products.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="category">
+
+                <img
+                    src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=80"
+                    alt="Construction supplies">
+
+                <div class="category-content">
+
+                    <h3>
+                        Construction
+                    </h3>
+
+                    <p>
+                        Supplies and accessories for
+                        building work.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     PRODUCTS
+========================= -->
+
+<section id="products">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span class="section-label">
+                Products
+            </span>
+
+            <h2>
+                Popular Products
+            </h2>
+
+            <p>
+                These are some of our common product categories.
+                Contact us for availability, brands and prices.
+            </p>
+
+        </div>
+
+
+        <!-- FILTER BUTTONS -->
+
+        <div class="filter-buttons">
+
+            <button
+                class="filter-button active"
+                data-filter="all">
+
+                All
+
+            </button>
+
+            <button
+                class="filter-button"
+                data-filter="tools">
+
+                Tools
+
+            </button>
+
+            <button
+                class="filter-button"
+                data-filter="plumbing">
+
+                Plumbing
+
+            </button>
+
+            <button
+                class="filter-button"
+                data-filter="electrical">
+
+                Electrical
+
+            </button>
+
+            <button
+                class="filter-button"
+                data-filter="construction">
+
+                Construction
+
+            </button>
+
+        </div>
+
+
+        <!-- PRODUCT GRID -->
+
+        <div class="product-grid">
+
+
+            <!-- PRODUCT 1 -->
+
+            <article
+                class="product"
+                data-category="tools">
+
+                <div class="product-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&w=700&q=80"
+                        alt="Hand tools">
+
+                </div>
+
+                <div class="product-content">
+
+                    <span class="product-tag">
+                        Tools
+                    </span>
+
+                    <h3>
+                        Hand Tools
+                    </h3>
+
+                    <p>
+                        Tools for repair, installation
+                        and workshop work.
+                    </p>
+
+                    <a
+                        class="product-link"
+                        href="https://wa.me/9779705020251?text=Hello%20Anand%20Hardware%2C%20I%20want%20to%20ask%20about%20hand%20tools."
+                        target="_blank">
+
+                        Ask on WhatsApp →
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PRODUCT 2 -->
+
+            <article
+                class="product"
+                data-category="tools">
+
+                <div class="product-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=700&q=80"
+                        alt="Power tools">
+
+                </div>
+
+                <div class="product-content">
+
+                    <span class="product-tag">
+                        Tools
+                    </span>
+
+                    <h3>
+                        Power Tools
+                    </h3>
+
+                    <p>
+                        Tools for drilling, cutting
+                        and construction work.
+                    </p>
+
+                    <a
+                        class="product-link"
+                        href="https://wa.me/9779705020251?text=Hello%20Anand%20Hardware%2C%20I%20want%20to%20ask%20about%20power%20tools."
+                        target="_blank">
+
+                        Ask on WhatsApp →
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PRODUCT 3 -->
+
+            <article
+                class="product"
+                data-category="plumbing">
+
+                <div class="product-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=700&q=80"
+                        alt="Pipes and fittings">
+
+                </div>
+
+                <div class="product-content">
+
+                    <span class="product-tag">
+                        Plumbing
+                    </span>
+
+                    <h3>
+                        Pipes & Fittings
+                    </h3>
+
+                    <p>
+                        Common pipes, fittings and
+                        plumbing components.
+                    </p>
+
+                    <a
+                        class="product-link"
+                        href="https://wa.me/9779705020251?text=Hello%20Anand%20Hardware%2C%20I%20want%20to%20ask%20about%20pipes%20and%20fittings."
+                        target="_blank">
+
+                        Ask on WhatsApp →
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PRODUCT 4 -->
+
+            <article
+                class="product"
+                data-category="electrical">
+
+                <div class="product-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=700&q=80"
+                        alt="Electrical products">
+
+                </div>
+
+                <div class="product-content">
+
+                    <span class="product-tag">
+                        Electrical
+                    </span>
+
+                    <h3>
+                        Electrical Items
+                    </h3>
+
+                    <p>
+                        Accessories and products for
+                        electrical installation.
+                    </p>
+
+                    <a
+                        class="product-link"
+                        href="https://wa.me/9779705020251?text=Hello%20Anand%20Hardware%2C%20I%20want%20to%20ask%20about%20electrical%20items."
+                        target="_blank">
+
+                        Ask on WhatsApp →
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PRODUCT 5 -->
+
+            <article
+                class="product"
+                data-category="construction">
+
+                <div class="product-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1590479773265-7464e5d48118?auto=format&fit=crop&w=700&q=80"
+                        alt="Construction supplies">
+
+                </div>
+
+                <div class="product-content">
+
+                    <span class="product-tag">
+                        Construction
+                    </span>
+
+                    <h3>
+                        Construction Supplies
+                    </h3>
+
+                    <p>
+                        Useful products for building
+                        and construction work.
+                    </p>
+
+                    <a
+                        class="product-link"
+                        href="https://wa.me/9779705020251?text=Hello%20Anand%20Hardware%2C%20I%20want%20to%20ask%20about%20construction%20supplies."
+                        target="_blank">
+
+                        Ask on WhatsApp →
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PRODUCT 6 -->
+
+            <article
+                class="product"
+                data-category="tools">
+
+                <div class="product-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1572981779307-38b8cabb2407?auto=format&fit=crop&w=700&q=80"
+                        alt="Measuring tools">
+
+                </div>
+
+                <div class="product-content">
+
+                    <span class="product-tag">
+                        Tools
+                    </span>
+
+                    <h3>
+                        Measuring Tools
+                    </h3>
+
+                    <p>
+                        Measuring tapes, levels and
+                        other measuring tools.
+                    </p>
+
+                    <a
+                        class="product-link"
+                        href="https://wa.me/9779705020251?text=Hello%20Anand%20Hardware%2C%20I%20want%20to%20ask%20about%20measuring%20tools."
+                        target="_blank">
+
+                        Ask on WhatsApp →
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PRODUCT 7 -->
+
+            <article
+                class="product"
+                data-category="plumbing">
+
+                <div class="product-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=700&q=80"
+                        alt="Bathroom fittings">
+
+                </div>
+
+                <div class="product-content">
+
+                    <span class="product-tag">
+                        Plumbing
+                    </span>
+
+                    <h3>
+                        Bathroom Fittings
+                    </h3>
+
+                    <p>
+                        Fittings and accessories for
+                        bathroom plumbing.
+                    </p>
+
+                    <a
+                        class="product-link"
+                        href="https://wa.me/9779705020251?text=Hello%20Anand%20Hardware%2C%20I%20want%20to%20ask%20about%20bathroom%20fittings."
+                        target="_blank">
+
+                        Ask on WhatsApp →
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PRODUCT 8 -->
+
+            <article
+                class="product"
+                data-category="construction">
+
+                <div class="product-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=700&q=80"
+                        alt="Construction work">
+
+                </div>
+
+                <div class="product-content">
+
+                    <span class="product-tag">
+                        Construction
+                    </span>
+
+                    <h3>
+                        Site Accessories
+                    </h3>
+
+                    <p>
+                        Useful accessories for construction
+                        and maintenance work.
+                    </p>
+
+                    <a
+                        class="product-link"
+                        href="https://wa.me/9779705020251?text=Hello%20Anand%20Hardware%2C%20I%20want%20to%20ask%20about%20site%20accessories."
+                        target="_blank">
+
+                        Ask on WhatsApp →
+
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section
+    class="about"
+    id="about">
+
+    <div class="container about-grid">
+
+
+        <div>
+
+            <span class="section-label">
+                About Us
+            </span>
+
+            <h2>
+                Your Local Hardware Partner
+            </h2>
+
+            <p>
+                Anand Hardware is a local hardware shop
+                located at Main Road South, Biratnagar 09.
+            </p>
+
+            <p>
+                We provide useful hardware, tools, plumbing,
+                electrical and construction products for
+                homes, businesses, technicians and contractors.
+            </p>
+
+
+            <div class="about-list">
+
+                <div>
+                    <span class="check">✓</span>
+                    <span>
+                        Convenient location in Biratnagar 09
+                    </span>
+                </div>
+
+                <div>
+                    <span class="check">✓</span>
+                    <span>
+                        Products for repair and construction
+                    </span>
+                </div>
+
+                <div>
+                    <span class="check">✓</span>
+                    <span>
+                        Easy phone and WhatsApp enquiry
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="about-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&w=1200&q=85"
+                alt="Hardware tools">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     SERVICES
+========================= -->
+
+<section class="light-section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span class="section-label">
+                Our Service
+            </span>
+
+            <h2>
+                How We Can Help
+            </h2>
+
+            <p>
+                Contact us when you need products for
+                your repair, maintenance or construction work.
+            </p>
+
+        </div>
+
+
+        <div class="service-grid">
+
+
+            <article class="service">
+
+                <div class="service-icon">
+                    ?
+                </div>
+
+                <h3>
+                    Product Enquiry
+                </h3>
+
+                <p>
+                    Ask us about product availability,
+                    brands, sizes and current prices.
+                </p>
+
+            </article>
+
+
+
+            <article class="service">
+
+                <div class="service-icon">
+                    ✓
+                </div>
+
+                <h3>
+                    Project Shopping
+                </h3>
+
+                <p>
+                    Tell us what you need for your project
+                    and ask about suitable products.
+                </p>
+
+            </article>
+
+
+
+            <article class="service">
+
+                <div class="service-icon">
+                    ☎
+                </div>
+
+                <h3>
+                    Easy Contact
+                </h3>
+
+                <p>
+                    Call or send a WhatsApp message
+                    for quick enquiries.
+                </p>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     CTA
+========================= -->
+
+<section class="cta">
+
+    <div class="container">
+
+        <div class="cta-box">
+
+            <div>
+
+                <h2>
+                    Need something for your project?
+                </h2>
+
+                <p>
+                    Call us or send a WhatsApp message.
+                </p>
+
+            </div>
+
+
+            <a
+                href="https://wa.me/9779705020251?text=Hello%20Anand%20Hardware%2C%20I%20want%20to%20ask%20about%20your%20products."
+                target="_blank"
+                class="button button-white">
+
+                WhatsApp Us →
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section id="contact">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span class="section-label">
+                Contact
+            </span>
+
+            <h2>
+                Visit Anand Hardware
+            </h2>
+
+            <p>
+                Visit our store in Biratnagar or contact us
+                before coming to check product availability.
+            </p>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+
+            <!-- CONTACT DETAILS -->
+
+            <div class="contact-card">
+
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        📍
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Location
+                        </strong>
+
+                        <span>
+                            Biratnagar 09,
+                            Main Road (South), Nepal
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        ☎
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Phone
+                        </strong>
+
+                        <a href="tel:+9779705020251">
+                            9708000000
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        W
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            WhatsApp
+                        </strong>
+
+                        <a
+                            href="https://wa.me/9779705020251"
+                            target="_blank">
+
+                            Chat with us
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="buttons">
+
+                    <a
+                        href="tel:+9779705020251"
+                        class="button button-primary">
+
+                        Call Now
+
+                    </a>
+
+
+                    <a
+                        href="https://www.google.com/maps/search/?api=1&query=Anand+Hardware+Biratnagar+09+Main+Road+South"
+                        target="_blank"
+                        class="button"
+                        style="background:#f2f2f0">
+
+                        Open Maps ↗
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- MAP -->
+
+            <div class="map-card">
+
+                <iframe
+                    title="Anand Hardware location"
+                    loading="lazy"
+                    src="https://www.google.com/maps?q=Biratnagar%2009%2C%20Main%20Road%20South%2C%20Nepal&output=embed">
+                </iframe>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+
+            <div>
+
+                <a href="#home" class="logo">
+
+                    <div class="logo-box">
+                        AH
+                    </div>
+
+                    <div class="logo-text">
+
+                        <strong>
+                            Anand Hardware
+                        </strong>
+
+                        <small>
+                            HARDWARE & BUILDING SUPPLIES
+                        </small>
+
+                    </div>
+
+                </a>
+
+
+                <p>
+                    Hardware, tools, plumbing, electrical
+                    and building supplies in Biratnagar.
+                </p>
+
+            </div>
+
+
+
+            <div>
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="#home">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#categories">
+                            Categories
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#products">
+                            Products
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#about">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <div>
+
+                <h3>
+                    Contact
+                </h3>
+
+                <ul>
+
+                    <li>
+                        Biratnagar 09,
+                        Main Road (South)
+                    </li>
+
+                    <li>
+                        <a href="tel:+9779705020251">
+                            9708000000
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="https://wa.me/9779705020251"
+                            target="_blank">
+
+                            WhatsApp
+
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="copyright">
+
+            <span>
+                © <span id="year"></span>
+                Anand Hardware. All rights reserved.
+            </span>
+
+            <span>
+                Biratnagar, Nepal
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =========================
+     FLOATING CALL BUTTON
+========================= -->
+
+<a
+    href="tel:+9779705020251"
+    class="call-button"
+    aria-label="Call Anand Hardware">
+
+    ☎
+
+</a>
+
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
+
+    /* MOBILE MENU */
+
+    function toggleMenu() {
+
+        document
+            .getElementById("nav")
+            .classList
+            .toggle("open");
+
+    }
+
+
+    function closeMenu() {
+
+        document
+            .getElementById("nav")
+            .classList
+            .remove("open");
+
+    }
+
+
+
+    /* PRODUCT FILTER */
+
+    const filterButtons =
+        document.querySelectorAll(".filter-button");
+
+    const products =
+        document.querySelectorAll(".product");
+
+
+    filterButtons.forEach(function(button) {
+
+        button.addEventListener("click", function() {
+
+            /* Remove active class */
+
+            filterButtons.forEach(function(btn) {
+
+                btn.classList.remove("active");
+
+            });
+
+
+            /* Add active class */
+
+            button.classList.add("active");
+
+
+            /* Get selected category */
+
+            const category =
+                button.dataset.filter;
+
+
+            /* Show / hide products */
+
+            products.forEach(function(product) {
+
+                if (
+                    category === "all" ||
+                    product.dataset.category === category
+                ) {
+
+                    product.classList.remove("hide");
+
+                } else {
+
+                    product.classList.add("hide");
+
+                }
+
+            });
+
+        });
+
+    });
+
+
+
+    /* CURRENT YEAR */
+
+    document.getElementById("year").textContent =
+        new Date().getFullYear();
+
+</script>
+
+
+</body>
+</html>
