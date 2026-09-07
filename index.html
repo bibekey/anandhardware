@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Anand Hardware | Hardware & Building Supplies</title>
-    <!-- Save the supplied Anand logo as "logo.png" in the same folder as this HTML file. -->
 
-    <meta name="description"content="We provide useful hardware, tools, plumbing, electrical and construction products for homes, businesses, technicians and contractors.">
-    <meta name="keywords"content="Anand Hardware, hardware shop Biratnagar, hardware store Biratnagar, tools, plumbing, electrical, building materials">
+    <meta name="description"
+        content="Anand Hardware provides quality hardware, tools, plumbing, electrical and construction supplies in Biratnagar, Nepal.">
+
+    <meta name="keywords"
+        content="Anand Hardware, hardware shop Biratnagar, hardware store Biratnagar, tools, plumbing, electrical, building materials">
+
     <meta name="author" content="Anand Hardware">
-    <meta property="og:image" content="img/img/logo.png">
-    <meta name="theme-color" content="#b34a24">
-    
+
+    <meta property="og:title" content="Anand Hardware | Hardware & Building Supplies">
+    <meta property="og:description"
+        content="Quality hardware, tools, plumbing, electrical and construction supplies in Biratnagar.">
+    <meta property="og:image" content="img/logo.png">
+
+    <meta name="theme-color" content="#000000">
 
     <link rel="stylesheet" href="assets/style.css">
     <link rel="icon" href="favicon.png" type="image/x-icon">
@@ -26,12 +34,9 @@
         :root {
             --primary: #000000;
             --primary-dark: #111111;
-            --orange: #000000;
-
             --dark: #050505;
             --text: #181818;
             --gray: #666666;
-
             --light: #f5f5f5;
             --white: #ffffff;
             --border: #dedede;
@@ -91,14 +96,25 @@
         }
 
         .topbar .container {
-            min-height: 38px;
+            min-height: 40px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            gap: 15px;
+        }
+
+        .topbar-right {
+            display: flex;
+            align-items: center;
+            gap: 18px;
         }
 
         .topbar a {
             font-weight: bold;
+        }
+
+        .topbar a:hover {
+            text-decoration: underline;
         }
 
 
@@ -126,6 +142,7 @@
             align-items: center;
             gap: 10px;
         }
+
         .logo-mark {
             width: 58px;
             height: 58px;
@@ -158,6 +175,10 @@
         }
 
 
+        /* =========================
+           NAVIGATION
+        ========================= */
+
         nav {
             display: flex;
             align-items: center;
@@ -171,11 +192,11 @@
         }
 
         nav a:hover {
-            color: #000000;
+            color: #000;
         }
 
         .nav-button {
-            background: #000000;
+            background: #000;
             color: white !important;
             padding: 10px 16px;
             border-radius: 8px;
@@ -218,12 +239,10 @@
 
         .hero-label {
             display: inline-block;
-            background: rgba(255,255,255,.12);
-            border: 1px solid rgba(255,255,255,.25);
-
+            background: rgba(0, 0, 0, .35);
+            border: 1px solid rgba(255, 255, 255, .35);
             padding: 7px 12px;
             border-radius: 30px;
-
             font-size: 12px;
             font-weight: bold;
             text-transform: uppercase;
@@ -252,10 +271,8 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-
             padding: 12px 18px;
             border-radius: 9px;
-
             font-weight: bold;
             font-size: 14px;
         }
@@ -271,7 +288,7 @@
         }
 
         .button-outline {
-            border: 1px solid rgba(255,255,255,.55);
+            border: 1px solid rgba(255, 255, 255, .55);
             color: #fff;
         }
 
@@ -305,10 +322,9 @@
         .quick-icon {
             width: 42px;
             height: 42px;
-
             border-radius: 10px;
             background: #f1f1f1;
-            color: #000000;
+            color: #000;
 
             display: flex;
             align-items: center;
@@ -347,7 +363,7 @@
         }
 
         .section-label {
-            color: #000000;
+            color: #000;
             font-size: 12px;
             font-weight: bold;
             letter-spacing: 1.5px;
@@ -382,13 +398,13 @@
             border: 1px solid var(--border);
             border-radius: var(--radius);
             overflow: hidden;
-
             transition: .2s;
         }
 
         .category:hover {
             transform: translateY(-4px);
             box-shadow: var(--shadow);
+            border-color: #000;
         }
 
         .category img {
@@ -425,21 +441,18 @@
         .filter-button {
             border: 1px solid var(--border);
             background: white;
-
             padding: 9px 15px;
             border-radius: 30px;
-
             font-size: 12px;
             font-weight: bold;
-
             cursor: pointer;
         }
 
         .filter-button.active,
         .filter-button:hover {
-            background: #000000;
+            background: #000;
             color: white;
-            border-color: #000000;
+            border-color: #000;
         }
 
         .product-grid {
@@ -453,6 +466,11 @@
             border-radius: var(--radius);
             overflow: hidden;
             background: white;
+            transition: .2s;
+        }
+
+        .product:hover {
+            border-color: #000;
         }
 
         .product.hide {
@@ -483,11 +501,9 @@
         .product-tag {
             display: inline-block;
             background: #f1f1f1;
-            color: #000000;
-
+            color: #000;
             padding: 4px 8px;
             border-radius: 5px;
-
             font-size: 10px;
             font-weight: bold;
             text-transform: uppercase;
@@ -505,7 +521,7 @@
         }
 
         .product-link {
-            color: #000000;
+            color: #000;
             font-size: 13px;
             font-weight: bold;
         }
@@ -528,7 +544,7 @@
         }
 
         .about .section-label {
-            color: #ffffff;
+            color: #fff;
         }
 
         .about h2 {
@@ -556,7 +572,7 @@
         }
 
         .check {
-            color: #000000;
+            color: #fff;
             font-weight: bold;
         }
 
@@ -586,15 +602,19 @@
             border-radius: var(--radius);
             padding: 25px;
             background: white;
+            transition: .2s;
+        }
+
+        .service:hover {
+            border-color: #000;
+            box-shadow: var(--shadow);
         }
 
         .service-icon {
             width: 46px;
             height: 46px;
-
             background: #f1f1f1;
-            color: #000000;
-
+            color: #000;
             border-radius: 10px;
 
             display: flex;
@@ -625,9 +645,8 @@
         }
 
         .cta-box {
-            background: #000000;
+            background: #000;
             color: white;
-
             border-radius: 18px;
             padding: 40px;
 
@@ -642,7 +661,7 @@
         }
 
         .cta-box p {
-            color: #f5dcd2;
+            color: #d0d0d0;
             margin-top: 5px;
         }
 
@@ -672,7 +691,6 @@
         .contact-item {
             display: flex;
             gap: 12px;
-
             padding: 16px 0;
             border-bottom: 1px solid var(--border);
         }
@@ -684,12 +702,10 @@
         .contact-icon {
             width: 40px;
             height: 40px;
-
             flex-shrink: 0;
 
             background: #f1f1f1;
-            color: #000000;
-
+            color: #000;
             border-radius: 9px;
 
             display: flex;
@@ -708,6 +724,49 @@
             font-size: 13px;
         }
 
+        .contact-item a:hover {
+            color: #000;
+            text-decoration: underline;
+        }
+
+
+        /* =========================
+           OFFICE CARDS
+        ========================= */
+
+        .office-title {
+            font-size: 18px;
+            margin-bottom: 6px;
+        }
+
+        .office-label {
+            display: inline-block;
+            font-size: 10px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            background: #000;
+            color: #fff;
+            padding: 4px 8px;
+            border-radius: 4px;
+            margin-bottom: 8px;
+        }
+
+        .office-details {
+            color: var(--gray);
+            font-size: 13px;
+        }
+
+        .office-details a {
+            display: inline-block;
+            margin-top: 3px;
+        }
+
+
+        /* =========================
+           MAP
+        ========================= */
+
         .map-card iframe {
             width: 100%;
             height: 100%;
@@ -721,14 +780,14 @@
         ========================= */
 
         footer {
-            background: #000000;
+            background: #000;
             color: #b9c0c4;
             padding: 50px 0 20px;
         }
 
         .footer-grid {
             display: grid;
-            grid-template-columns: 1.5fr 1fr 1fr;
+            grid-template-columns: 1.4fr 1fr 1.3fr;
             gap: 40px;
         }
 
@@ -763,6 +822,23 @@
             color: white;
         }
 
+        .footer-office {
+            margin-bottom: 15px;
+        }
+
+        .footer-office strong {
+            display: block;
+            color: #fff;
+            font-size: 13px;
+            margin-bottom: 3px;
+        }
+
+        .footer-office span {
+            display: block;
+            font-size: 12px;
+            color: #aeb4b7;
+        }
+
         .copyright {
             border-top: 1px solid #303538;
             margin-top: 35px;
@@ -787,7 +863,7 @@
             width: 55px;
             height: 55px;
 
-            background: #000000;
+            background: #000;
             color: white;
 
             border-radius: 50%;
@@ -798,7 +874,7 @@
 
             font-size: 22px;
 
-            box-shadow: 0 8px 25px rgba(0,0,0,.2);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, .2);
 
             z-index: 90;
         }
@@ -858,6 +934,11 @@
             .about-image img {
                 height: 350px;
             }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
         }
 
 
@@ -877,6 +958,11 @@
 
             .topbar span {
                 display: none;
+            }
+
+            .topbar-right {
+                gap: 10px;
+                font-size: 11px;
             }
 
             .header-inner {
@@ -940,79 +1026,11 @@
                 margin-top: 5px;
             }
 
-        }
-
-    
-        /* =========================
-           MONOCHROME BRAND SYSTEM
-        ========================= */
-        :root {
-            --primary: #000000;
-            --primary-dark: #111111;
-            --orange: #000000;
-            --dark: #050505;
-            --text: #181818;
-            --gray: #666666;
-            --light: #f5f5f5;
-            --white: #ffffff;
-            --border: #dedede;
-        }
-
-        .hero-label,
-        .section-label,
-        .product-tag,
-        .product-link {
-            color: #000;
-        }
-
-        .hero-label {
-            color: #fff;
-            border-color: rgba(255,255,255,.35);
-            background: rgba(0,0,0,.35);
-        }
-
-        .category:hover,
-        .product:hover,
-        .service:hover {
-            border-color: #000;
-        }
-
-        .filter-button.active,
-        .filter-button:hover {
-            background: #000;
-            color: #fff;
-            border-color: #000;
-        }
-
-        .cta-box {
-            background: #000;
-        }
-
-        .quick-icon,
-        .service-icon,
-        .contact-icon {
-            background: #f1f1f1;
-            color: #000;
-        }
-
-        .check {
-            color: #fff;
-        }
-
-        .call-button {
-            background: #000;
-            color: #fff;
-        }
-
-        footer .logo-mark {
-            background: #fff;
-        }
-
-        @media (max-width: 620px) {
             .logo-mark {
                 width: 50px;
                 height: 50px;
             }
+
         }
 
     </style>
@@ -1034,9 +1052,17 @@
             Quality hardware and building supplies in Biratnagar
         </span>
 
-        <a href="tel:+9779705020251">
-            ☎ 9708000000
-        </a>
+        <div class="topbar-right">
+
+            <a href="tel:+9779852020251">
+                ☎ +977 9852020251
+            </a>
+
+            <a href="mailto:anandhardware.brt@gmail.com">
+                ✉ Email
+            </a>
+
+        </div>
 
     </div>
 
@@ -1106,7 +1132,7 @@
             </a>
 
             <a
-                href="tel:+9779705020251"
+                href="tel:+9779852020251"
                 class="nav-button">
 
                 Call Now
@@ -1162,16 +1188,16 @@
 
 
                 <a
-                    href="tel:+9779705020251"
+                    href="tel:+9779852020251"
                     class="button button-white">
 
-                    ☎ 9708000000
+                    ☎ +977 9852020251
 
                 </a>
 
 
                 <a
-                    href="https://wa.me/9779705020251"
+                    href="https://wa.me/9779852020251?text=Hello%20Anand%20Hardware%2C%20I%20want%20to%20ask%20about%20your%20products."
                     target="_blank"
                     rel="noopener"
                     class="button button-outline">
@@ -1253,7 +1279,7 @@
                 </strong>
 
                 <span>
-                    Main Road South, Biratnagar 09
+                    Main Road (South), Biratnagar
                 </span>
 
             </div>
@@ -1421,8 +1447,6 @@
         </div>
 
 
-        <!-- FILTER BUTTONS -->
-
         <div class="filter-buttons">
 
             <button
@@ -1468,8 +1492,6 @@
         </div>
 
 
-        <!-- PRODUCT GRID -->
-
         <div class="product-grid">
 
 
@@ -1504,8 +1526,9 @@
 
                     <a
                         class="product-link"
-                        href="https://wa.me/9779705020251?text=Hello%20Anand%20Hardware%2C%20I%20want%20to%20ask%20about%20hand%20tools."
-                        target="_blank">
+                        href="https://wa.me/9779852020251?text=Hello%20Anand%20Hardware%2C%20I%20want%20to%20ask%20about%20hand%20tools."
+                        target="_blank"
+                        rel="noopener">
 
                         Ask on WhatsApp →
 
@@ -1548,8 +1571,9 @@
 
                     <a
                         class="product-link"
-                        href="https://wa.me/9779705020251?text=Hello%20Anand%20Hardware%2C%20I%20want%20to%20ask%20about%20power%20tools."
-                        target="_blank">
+                        href="https://wa.me/9779852020251?text=Hello%20Anand%20Hardware%2C%20I%20want%20to%20ask%20about%20power%20tools."
+                        target="_blank"
+                        rel="noopener">
 
                         Ask on WhatsApp →
 
@@ -1592,8 +1616,9 @@
 
                     <a
                         class="product-link"
-                        href="https://wa.me/9779705020251?text=Hello%20Anand%20Hardware%2C%20I%20want%20to%20ask%20about%20pipes%20and%20fittings."
-                        target="_blank">
+                        href="https://wa.me/9779852020251?text=Hello%20Anand%20Hardware%2C%20I%20want%20to%20ask%20about%20pipes%20and%20fittings."
+                        target="_blank"
+                        rel="noopener">
 
                         Ask on WhatsApp →
 
@@ -1636,8 +1661,9 @@
 
                     <a
                         class="product-link"
-                        href="https://wa.me/9779705020251?text=Hello%20Anand%20Hardware%2C%20I%20want%20to%20ask%20about%20electrical%20items."
-                        target="_blank">
+                        href="https://wa.me/9779852020251?text=Hello%20Anand%20Hardware%2C%20I%20want%20to%20ask%20about%20electrical%20items."
+                        target="_blank"
+                        rel="noopener">
 
                         Ask on WhatsApp →
 
@@ -1680,8 +1706,9 @@
 
                     <a
                         class="product-link"
-                        href="https://wa.me/9779705020251?text=Hello%20Anand%20Hardware%2C%20I%20want%20to%20ask%20about%20construction%20supplies."
-                        target="_blank">
+                        href="https://wa.me/9779852020251?text=Hello%20Anand%20Hardware%2C%20I%20want%20to%20ask%20about%20construction%20supplies."
+                        target="_blank"
+                        rel="noopener">
 
                         Ask on WhatsApp →
 
@@ -1724,8 +1751,9 @@
 
                     <a
                         class="product-link"
-                        href="https://wa.me/9779705020251?text=Hello%20Anand%20Hardware%2C%20I%20want%20to%20ask%20about%20measuring%20tools."
-                        target="_blank">
+                        href="https://wa.me/9779852020251?text=Hello%20Anand%20Hardware%2C%20I%20want%20to%20ask%20about%20measuring%20tools."
+                        target="_blank"
+                        rel="noopener">
 
                         Ask on WhatsApp →
 
@@ -1768,8 +1796,9 @@
 
                     <a
                         class="product-link"
-                        href="https://wa.me/9779705020251?text=Hello%20Anand%20Hardware%2C%20I%20want%20to%20ask%20about%20bathroom%20fittings."
-                        target="_blank">
+                        href="https://wa.me/9779852020251?text=Hello%20Anand%20Hardware%2C%20I%20want%20to%20ask%20about%20bathroom%20fittings."
+                        target="_blank"
+                        rel="noopener">
 
                         Ask on WhatsApp →
 
@@ -1812,8 +1841,9 @@
 
                     <a
                         class="product-link"
-                        href="https://wa.me/9779705020251?text=Hello%20Anand%20Hardware%2C%20I%20want%20to%20ask%20about%20site%20accessories."
-                        target="_blank">
+                        href="https://wa.me/9779852020251?text=Hello%20Anand%20Hardware%2C%20I%20want%20to%20ask%20about%20site%20accessories."
+                        target="_blank"
+                        rel="noopener">
 
                         Ask on WhatsApp →
 
@@ -1841,7 +1871,6 @@
 
     <div class="container about-grid">
 
-
         <div>
 
             <span class="section-label">
@@ -1853,14 +1882,15 @@
             </h2>
 
             <p>
-                Anand Hardware is a local hardware shop
-                located at Main Road South, Biratnagar 09.
+                Anand Hardware serves customers in Biratnagar
+                with hardware, tools, plumbing, electrical
+                and construction supplies.
             </p>
 
             <p>
-                We provide useful hardware, tools, plumbing,
-                electrical and construction products for
-                homes, businesses, technicians and contractors.
+                We provide useful products for homes,
+                businesses, technicians, contractors and
+                construction projects.
             </p>
 
 
@@ -1869,14 +1899,14 @@
                 <div>
                     <span class="check">✓</span>
                     <span>
-                        Convenient location in Biratnagar 09
+                        Head office at Main Road (South), Biratnagar
                     </span>
                 </div>
 
                 <div>
                     <span class="check">✓</span>
                     <span>
-                        Products for repair and construction
+                        Branch office at Dharmabandh Road, Biratnagar
                     </span>
                 </div>
 
@@ -2023,8 +2053,9 @@
 
 
             <a
-                href="https://wa.me/9779705020251?text=Hello%20Anand%20Hardware%2C%20I%20want%20to%20ask%20about%20your%20products."
+                href="https://wa.me/9779852020251?text=Hello%20Anand%20Hardware%2C%20I%20want%20to%20ask%20about%20your%20products."
                 target="_blank"
+                rel="noopener"
                 class="button button-white">
 
                 WhatsApp Us →
@@ -2058,7 +2089,7 @@
             </h2>
 
             <p>
-                Visit our store in Biratnagar or contact us
+                Visit our offices in Biratnagar or contact us
                 before coming to check product availability.
             </p>
 
@@ -2073,6 +2104,8 @@
             <div class="contact-card">
 
 
+                <!-- HEAD OFFICE -->
+
                 <div class="contact-item">
 
                     <div class="contact-icon">
@@ -2081,20 +2114,65 @@
 
                     <div>
 
-                        <strong>
-                            Location
+                        <span class="office-label">
+                            Head Office
+                        </span>
+
+                        <strong class="office-title">
+                            Biratnagar, Main Road (South)
                         </strong>
 
-                        <span>
-                            Biratnagar 09,
-                            Main Road (South), Nepal
-                        </span>
+                        <div class="office-details">
+
+                            Biratnagar, Nepal<br>
+
+                            <a href="tel:021474003">
+                                ☎ 021-474003
+                            </a>
+
+                        </div>
 
                     </div>
 
                 </div>
 
 
+
+                <!-- BRANCH OFFICE -->
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        📍
+                    </div>
+
+                    <div>
+
+                        <span class="office-label">
+                            Branch Office
+                        </span>
+
+                        <strong class="office-title">
+                            Biratnagar, Dharmabandh Road
+                        </strong>
+
+                        <div class="office-details">
+
+                            Biratnagar, Nepal<br>
+
+                            <a href="tel:02147">
+                                ☎ 021-47
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- MOBILE -->
 
                 <div class="contact-item">
 
@@ -2105,11 +2183,11 @@
                     <div>
 
                         <strong>
-                            Phone
+                            Mobile
                         </strong>
 
-                        <a href="tel:+9779705020251">
-                            9708000000
+                        <a href="tel:+9779852020251">
+                            +977 9852020251
                         </a>
 
                     </div>
@@ -2117,6 +2195,56 @@
                 </div>
 
 
+
+                <!-- TELEPHONE -->
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        ☎
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Telephone
+                        </strong>
+
+                        <a href="tel:021590307">
+                            021-590307
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- EMAIL -->
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        ✉
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Email
+                        </strong>
+
+                        <a href="mailto:anandhardware.brt@gmail.com">
+                            anandhardware.brt@gmail.com
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- WHATSAPP -->
 
                 <div class="contact-item">
 
@@ -2131,8 +2259,9 @@
                         </strong>
 
                         <a
-                            href="https://wa.me/9779705020251"
-                            target="_blank">
+                            href="https://wa.me/9779852020251"
+                            target="_blank"
+                            rel="noopener">
 
                             Chat with us
 
@@ -2147,7 +2276,7 @@
                 <div class="buttons">
 
                     <a
-                        href="tel:+9779705020251"
+                        href="tel:+9779852020251"
                         class="button button-primary">
 
                         Call Now
@@ -2156,8 +2285,19 @@
 
 
                     <a
-                        href="https://www.google.com/maps/search/?api=1&query=Anand+Hardware+Biratnagar+09+Main+Road+South"
+                        href="mailto:anandhardware.brt@gmail.com"
+                        class="button"
+                        style="background:#f2f2f0">
+
+                        Email Us
+
+                    </a>
+
+
+                    <a
+                        href="https://www.google.com/maps/search/?api=1&query=Anand+Hardware+Biratnagar+Main+Road+South"
                         target="_blank"
+                        rel="noopener"
                         class="button"
                         style="background:#f2f2f0">
 
@@ -2178,7 +2318,7 @@
                 <iframe
                     title="Anand Hardware location"
                     loading="lazy"
-                    src="https://www.google.com/maps?q=Biratnagar%2009%2C%20Main%20Road%20South%2C%20Nepal&output=embed">
+                    src="https://www.google.com/maps?q=Biratnagar%20Main%20Road%20South%20Nepal&output=embed">
                 </iframe>
 
             </div>
@@ -2205,13 +2345,15 @@
         <div class="footer-grid">
 
 
+            <!-- COMPANY -->
+
             <div>
 
                 <a href="#home" class="logo">
 
                     <div class="logo-mark">
-                <img src="logo.png" alt="Anand Hardware logo">
-            </div>
+                        <img src="img/logo.png" alt="Anand Hardware logo">
+                    </div>
 
                     <div class="logo-text">
 
@@ -2236,6 +2378,8 @@
             </div>
 
 
+
+            <!-- QUICK LINKS -->
 
             <div>
 
@@ -2281,29 +2425,80 @@
 
 
 
+            <!-- CONTACT -->
+
             <div>
 
                 <h3>
                     Contact
                 </h3>
 
+
+                <div class="footer-office">
+
+                    <strong>
+                        Head Office
+                    </strong>
+
+                    <span>
+                        Biratnagar, Main Road (South)
+                    </span>
+
+                    <span>
+                        Tel: 
+                        <a href="tel:021474003">
+                            021-474003
+                        </a>
+                    </span>
+
+                </div>
+
+
+                <div class="footer-office">
+
+                    <strong>
+                        Branch Office
+                    </strong>
+
+                    <span>
+                        Biratnagar, Dharmabandh Road
+                    </span>
+
+                    <span>
+                        Tel:
+                        <a href="tel:02147">
+                            021-47
+                        </a>
+                    </span>
+
+                </div>
+
+
                 <ul>
 
                     <li>
-                        Biratnagar 09,
-                        Main Road (South)
+                        <a href="tel:021590307">
+                            021-590307
+                        </a>
                     </li>
 
                     <li>
-                        <a href="tel:+9779705020251">
-                            9708000000
+                        <a href="tel:+9779852020251">
+                            +977 9852020251
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="mailto:anandhardware.brt@gmail.com">
+                            anandhardware.brt@gmail.com
                         </a>
                     </li>
 
                     <li>
                         <a
-                            href="https://wa.me/9779705020251"
-                            target="_blank">
+                            href="https://wa.me/9779852020251"
+                            target="_blank"
+                            rel="noopener">
 
                             WhatsApp
 
@@ -2342,7 +2537,7 @@
 ========================= -->
 
 <a
-    href="tel:+9779705020251"
+    href="tel:+9779852020251"
     class="call-button"
     aria-label="Call Anand Hardware">
 
@@ -2358,7 +2553,9 @@
 
 <script>
 
-    /* MOBILE MENU */
+    /* =========================
+       MOBILE MENU
+    ========================= */
 
     function toggleMenu() {
 
@@ -2381,7 +2578,9 @@
 
 
 
-    /* PRODUCT FILTER */
+    /* =========================
+       PRODUCT FILTER
+    ========================= */
 
     const filterButtons =
         document.querySelectorAll(".filter-button");
@@ -2394,8 +2593,6 @@
 
         button.addEventListener("click", function() {
 
-            /* Remove active class */
-
             filterButtons.forEach(function(btn) {
 
                 btn.classList.remove("active");
@@ -2403,18 +2600,12 @@
             });
 
 
-            /* Add active class */
-
             button.classList.add("active");
 
-
-            /* Get selected category */
 
             const category =
                 button.dataset.filter;
 
-
-            /* Show / hide products */
 
             products.forEach(function(product) {
 
@@ -2439,7 +2630,9 @@
 
 
 
-    /* CURRENT YEAR */
+    /* =========================
+       CURRENT YEAR
+    ========================= */
 
     document.getElementById("year").textContent =
         new Date().getFullYear();
