@@ -789,7 +789,7 @@
 
         .footer-grid {
             display: grid;
-            grid-template-columns: 1.3fr 1fr 1fr 1.2fr;
+            grid-template-columns: 1.3fr 1fr 1fr 1.3fr;
             gap: 30px;
         }
 
@@ -892,7 +892,7 @@
             color: #ffffff;
             font-weight: 700;
             font-size: 13px;
-            margin-bottom: 3px;
+            margin-bottom: 2px;
             display: flex;
             align-items: center;
             gap: 6px;
@@ -912,6 +912,7 @@
             gap: 8px;
             align-items: flex-start;
             color: #9ba1a6;
+            font-size: 12.5px;
         }
 
         .footer-contact-item a:hover {
@@ -1023,6 +1024,7 @@
 
             .footer-grid {
                 grid-template-columns: 1fr 1fr;
+                gap: 30px;
             }
 
         }
@@ -1104,12 +1106,9 @@
             }
 
             .copyright {
-                display: block;
-            }
-
-            .copyright span {
-                display: block;
-                margin-top: 5px;
+                flex-direction: column;
+                gap: 12px;
+                text-align: center;
             }
 
             .logo-mark {
@@ -2392,7 +2391,7 @@
 
 
 <!-- =========================
-     FOOTER
+    FOOTER
 ========================= -->
 
 <footer>
@@ -2411,7 +2410,7 @@
                     </div>
                 </a>
                 <p>
-                    Your trusted partner for premium building materials, industrial tools, plumbing, and electrical supplies with locations in Biratnagar and Keroun.
+                    Your trusted partner for premium building materials, industrial tools, plumbing, and electrical supplies with locations across Biratnagar.
                 </p>
                 <div class="footer-socials">
                     <a href="#" class="footer-social-btn" aria-label="Facebook">f</a>
@@ -2442,30 +2441,28 @@
                 </ul>
             </div>
 
-            <!-- Col 4: Both Branches Details -->
+            <!-- Col 4: Both Branches with Phone & Email Details -->
             <div>
                 <h3>Our Branches</h3>
                 <div class="footer-contact-list">
-                    <!-- Head Office -->
+                    <!-- Head Office: Biratnagar -->
                     <div>
-                        <div class="footer-branch-title">Biratnagar <span>Head Office</span></div>
-                        <div class="footer-contact-item">
-                            📍 <span>Main Road (South), Biratnagar</span>
-                        </div>
+                        <div class="footer-branch-title">Main Road <span>Head Office</span></div>
+                        <div class="footer-contact-item">📍 Main Road (South), Biratnagar</div>
+                        <div class="footer-contact-item">☎ Tel: <a href="tel:021474003">021-474003,</a><a href="tel:021590307">021-590307</a></div>
                     </div>
 
-                    <!-- Branch -->
+                    <!-- Branch: Dharmabandh Road -->
                     <div>
-                        <div class="footer-branch-title">Keroun <span>Branch</span></div>
-                        <div class="footer-contact-item">
-                            📍 <span>Dharmabandh Road, Biratnagar</span>
-                        </div>
+                        <div class="footer-branch-title">Dharmabandh Road <span>Branch</span></div>
+                        <div class="footer-contact-item">📍 Dharmabandh Road, Biratnagar</div>
+                        <div class="footer-contact-item">☎ Tel: <a href="tel:021474004">021-474004</a></div>
                     </div>
 
-                    <!-- General Contact -->
-                    <div style="margin-top: 4px; border-top: 1px solid #1f2227; padding-top: 8px;">
-                        <div class="footer-contact-item">
-                            ☎ <a href="tel:+9779852020251">+977 9852020251</a>
+                    <!-- Contact & Email details -->
+                    <div style="border-top: 1px solid #1f2227; padding-top: 10px; margin-top: 2px;">
+                        <div class="footer-contact-item" style="margin-bottom: 6px;">
+                            📱 <a href="tel:+9779852020251">+977 9852020251</a>
                         </div>
                         <div class="footer-contact-item">
                             ✉ <a href="mailto:anandhardware.brt@gmail.com">anandhardware.brt@gmail.com</a>
