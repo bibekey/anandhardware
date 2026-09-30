@@ -715,7 +715,7 @@
 
         .contact-item span,
         .contact-item a {
-            color: var(--gray);
+            color: var(--white);
             font-size: 13px;
         }
 
