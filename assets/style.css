@@ -1111,3 +1111,345 @@
             }
 
         }
+
+
+/* =========================================================
+   TRUSTED BRANDS — COMPACT VERSION
+========================================================= */
+
+.trusted-brands {
+    padding: 70px 0;
+    background: #f7f7f7;
+}
+
+
+/* SECTION TITLE */
+
+.trusted-brands .section-title {
+    max-width: 700px;
+    margin: 0 auto 35px;
+    text-align: center;
+}
+
+.trusted-brands .section-label {
+    display: inline-block;
+    margin-bottom: 8px;
+
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    color: #b8785b;
+}
+
+.trusted-brands .section-title h2 {
+    margin: 0 0 10px;
+
+    font-size: 32px;
+    line-height: 1.2;
+
+    color: #111;
+}
+
+.trusted-brands .section-title p {
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 1.6;
+
+    color: #666;
+}
+
+
+/* =========================================================
+   BRAND GRID
+========================================================= */
+
+.brand-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+}
+
+
+/* =========================================================
+   BRAND CARD
+========================================================= */
+
+.brand-card {
+    display: flex;
+
+    min-height: 165px;
+
+    background: #fff;
+
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+
+    transition: all 0.25s ease;
+}
+
+.brand-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.brand-logo {
+    width: 135px;
+    min-width: 135px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 18px;
+
+    background: #fafafa;
+
+    border-right: 1px solid #eee;
+}
+
+.brand-logo img {
+    width: 100%;
+    max-width: 105px;
+    max-height: 65px;
+
+    object-fit: contain;
+
+    transition: transform 0.25s ease;
+}
+
+.brand-card:hover .brand-logo img {
+    transform: scale(1.05);
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.brand-content {
+    padding: 18px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    flex: 1;
+}
+
+.brand-category {
+    display: inline-block;
+
+    margin-bottom: 6px;
+    padding: 4px 8px;
+
+    border-radius: 20px;
+
+    background: #f1f1f1;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #666;
+}
+
+.brand-content h3 {
+    margin: 0 0 6px;
+
+    font-size: 18px;
+    line-height: 1.2;
+
+    color: #111;
+}
+
+.brand-content p {
+    margin: 0 0 8px;
+
+    font-size: 12px;
+    line-height: 1.45;
+
+    color: #666;
+}
+
+
+/* =========================================================
+   AVAILABILITY
+========================================================= */
+
+.brand-availability {
+    margin-top: auto;
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    color: #287a4b;
+}
+
+.brand-availability i {
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.brands-cta {
+    margin-top: 25px;
+
+    padding: 17px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+
+    background: #111;
+
+    border-radius: 9px;
+}
+
+.brands-cta > div {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.brands-cta strong {
+    font-size: 13px;
+    color: #fff;
+}
+
+.brands-cta span {
+    font-size: 11px;
+    color: #aaa;
+}
+
+.brands-cta-button {
+    flex-shrink: 0;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    padding: 9px 14px;
+
+    border-radius: 6px;
+
+    background: #b8785b;
+
+    color: #fff;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition: 0.25s ease;
+}
+
+.brands-cta-button:hover {
+    background: #9f6248;
+}
+
+.brands-cta-button i {
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .trusted-brands {
+        padding: 50px 0;
+    }
+
+    .trusted-brands .section-title {
+        margin-bottom: 25px;
+    }
+
+    .trusted-brands .section-title h2 {
+        font-size: 26px;
+    }
+
+    .trusted-brands .section-title p {
+        font-size: 13px;
+    }
+
+    .brand-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .brand-card {
+        min-height: 135px;
+    }
+
+    .brand-logo {
+        width: 105px;
+        min-width: 105px;
+
+        padding: 12px;
+    }
+
+    .brand-logo img {
+        max-width: 80px;
+        max-height: 50px;
+    }
+
+    .brand-content {
+        padding: 14px 15px;
+    }
+
+    .brand-content h3 {
+        font-size: 16px;
+    }
+
+    .brand-content p {
+        font-size: 11px;
+        line-height: 1.4;
+    }
+
+    .brand-category {
+        font-size: 8px;
+        padding: 3px 7px;
+    }
+
+    .brand-availability {
+        font-size: 9px;
+    }
+
+    .brands-cta {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+    }
+
+    .brands-cta-button {
+        justify-content: center;
+    }
+}
