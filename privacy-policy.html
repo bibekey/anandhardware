@@ -5,10 +5,10 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Anand Hardware Trade Concern Pvt Ltd Privacy Policy. Learn how we collect, use, protect and manage your information.">
+    <meta name="description"
+        content="Anand Hardware Trade Concern Pvt Ltd Privacy Policy. Learn how we collect, use, protect and manage your information.">
 
     <meta name="author" content="Anand Hardware Trade Concern Pvt Ltd">
 
@@ -19,12 +19,15 @@
     <link rel="icon" href="img/logo.png">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
 
 
     <style>
@@ -33,26 +36,26 @@
            VARIABLES
         ========================= */
 
-        :root{
-            --blue:#174c73;
-            --dark-blue:#0d3553;
-            --copper:#b8785b;
-            --light-copper:#d29a7e;
+        :root {
+            --blue: #174c73;
+            --dark-blue: #0d3553;
+            --copper: #b8785b;
+            --light-copper: #d29a7e;
 
-            --text:#172331;
-            --gray:#667484;
+            --text: #172331;
+            --gray: #667484;
 
-            --light-bg:#f6f9fc;
-            --white:#ffffff;
+            --light-bg: #f6f9fc;
+            --white: #ffffff;
 
-            --border:#e5ebf1;
+            --border: #e5ebf1;
 
-            --green:#20b45d;
+            --green: #20b45d;
 
             --shadow:
-                0 20px 60px rgba(15,42,66,.10);
+                0 20px 60px rgba(15, 42, 66, .10);
 
-            --radius:20px;
+            --radius: 20px;
         }
 
 
@@ -62,243 +65,60 @@
 
         *,
         *::before,
-        *::after{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
 
-            -webkit-tap-highlight-color:transparent;
+            -webkit-tap-highlight-color: transparent;
         }
 
 
-        html{
-            scroll-behavior:smooth;
+        html {
+            scroll-behavior: smooth;
         }
 
 
-        body{
-            width:100%;
-            min-height:100vh;
+        body {
+            width: 100%;
+            min-height: 100vh;
 
-            font-family:Inter,Arial,sans-serif;
+            font-family: Inter, Arial, sans-serif;
 
-            color:var(--text);
-            background:#f6f9fc;
+            color: var(--text);
+            background: #f6f9fc;
 
-            line-height:1.7;
+            line-height: 1.7;
 
-            -webkit-font-smoothing:antialiased;
-            -moz-osx-font-smoothing:grayscale;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
 
-            overflow-x:hidden;
+            overflow-x: hidden;
         }
 
 
-        a{
-            color:inherit;
-            text-decoration:none;
+        a {
+            color: inherit;
+            text-decoration: none;
         }
 
 
-        img{
-            max-width:100%;
-            display:block;
+        img {
+            max-width: 100%;
+            display: block;
         }
 
 
         button,
         input,
-        textarea{
-            font:inherit;
+        textarea {
+            font: inherit;
         }
 
 
-        .container{
-            width:min(1160px,92%);
-            margin:auto;
-        }
-
-
-        /* =========================
-           HEADER
-        ========================= */
-
-        header{
-            position:sticky;
-            top:0;
-            left:0;
-
-            width:100%;
-
-            z-index:1000;
-
-            background:rgba(255,255,255,.92);
-
-            backdrop-filter:blur(18px);
-
-            border-bottom:
-                1px solid rgba(229,235,241,.9);
-
-            transition:.3s;
-        }
-
-
-        header.scrolled{
-            box-shadow:
-                0 10px 35px rgba(15,42,66,.08);
-        }
-
-
-        .nav{
-            min-height:82px;
-
-            display:flex;
-            align-items:center;
-            justify-content:space-between;
-
-            gap:25px;
-        }
-
-
-        /* =========================
-           LOGO
-        ========================= */
-
-        .logo{
-            display:flex;
-            align-items:center;
-            gap:10px;
-
-            flex-shrink:0;
-        }
-
-
-        .logo img{
-            width:50px;
-            height:50px;
-
-            object-fit:contain;
-        }
-
-
-        .logo-text{
-            font-family:Poppins,sans-serif;
-
-            font-size:1.25rem;
-            font-weight:800;
-
-            color:var(--blue);
-        }
-
-
-        .logo-text span{
-            color:var(--copper);
-        }
-
-
-        .logo small{
-            display:block;
-
-            margin-top:-3px;
-
-            color:var(--gray);
-
-            font-size:.4rem;
-            font-weight:700;
-
-            letter-spacing:1px;
-        }
-
-
-        /* =========================
-           NAVIGATION
-        ========================= */
-
-        .nav-links{
-            display:flex;
-            align-items:center;
-            gap:25px;
-
-            font-size:.86rem;
-            font-weight:600;
-        }
-
-
-        .nav-links a{
-            position:relative;
-
-            padding:28px 0;
-
-            color:var(--text);
-
-            transition:.25s;
-        }
-
-
-        .nav-links a::after{
-            content:"";
-
-            position:absolute;
-
-            left:0;
-            bottom:20px;
-
-            width:0;
-            height:2px;
-
-            background:var(--copper);
-
-            transition:.25s;
-        }
-
-
-        .nav-links a:hover{
-            color:var(--blue);
-        }
-
-
-        .nav-links a:hover::after{
-            width:100%;
-        }
-
-
-        .nav-cta{
-            display:inline-flex;
-            align-items:center;
-            gap:8px;
-
-            padding:11px 17px;
-
-            border-radius:10px;
-
-            background:var(--blue);
-            color:white;
-
-            font-size:.78rem;
-            font-weight:800;
-
-            transition:.25s;
-        }
-
-
-        .nav-cta:hover{
-            background:var(--dark-blue);
-
-            transform:translateY(-2px);
-        }
-
-
-        .menu{
-            display:none;
-
-            border:0;
-            background:none;
-
-            color:var(--blue);
-
-            font-size:1.45rem;
-
-            cursor:pointer;
+        .container {
+            width: min(1160px, 92%);
+            margin: auto;
         }
 
 
@@ -306,25 +126,25 @@
            PAGE HERO
         ========================= */
 
-        .page-hero{
-            position:relative;
+        .page-hero {
+            position: relative;
 
-            padding:90px 0 80px;
+            padding: 90px 0 80px;
 
-            overflow:hidden;
+            overflow: hidden;
 
-            text-align:center;
+            text-align: center;
 
             background:
                 radial-gradient(
                     circle at 90% 20%,
-                    rgba(184,120,91,.14),
+                    rgba(184, 120, 91, .14),
                     transparent 30%
                 ),
 
                 radial-gradient(
                     circle at 10% 80%,
-                    rgba(23,76,115,.10),
+                    rgba(23, 76, 115, .10),
                     transparent 30%
                 ),
 
@@ -336,96 +156,96 @@
         }
 
 
-        .page-hero::before{
-            content:"";
+        .page-hero::before {
+            content: "";
 
-            position:absolute;
+            position: absolute;
 
-            width:280px;
-            height:280px;
+            width: 280px;
+            height: 280px;
 
-            left:-120px;
-            top:20px;
+            left: -120px;
+            top: 20px;
 
-            border:1px solid
-                rgba(23,76,115,.10);
+            border: 1px solid
+                rgba(23, 76, 115, .10);
 
-            border-radius:50%;
+            border-radius: 50%;
         }
 
 
-        .page-hero::after{
-            content:"";
+        .page-hero::after {
+            content: "";
 
-            position:absolute;
+            position: absolute;
 
-            width:180px;
-            height:180px;
+            width: 180px;
+            height: 180px;
 
-            right:-70px;
-            bottom:-70px;
+            right: -70px;
+            bottom: -70px;
 
-            border:1px solid
-                rgba(184,120,91,.15);
+            border: 1px solid
+                rgba(184, 120, 91, .15);
 
-            border-radius:50%;
+            border-radius: 50%;
         }
 
 
-        .hero-content{
-            position:relative;
-            z-index:2;
+        .hero-content {
+            position: relative;
+            z-index: 2;
 
-            max-width:800px;
+            max-width: 800px;
 
-            margin:auto;
+            margin: auto;
         }
 
 
-        .eyebrow{
-            display:inline-flex;
-            align-items:center;
-            gap:8px;
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
 
-            padding:7px 13px;
+            padding: 7px 13px;
 
-            margin-bottom:17px;
+            margin-bottom: 17px;
 
             border:
                 1px solid
-                rgba(184,120,91,.22);
+                rgba(184, 120, 91, .22);
 
-            border-radius:50px;
+            border-radius: 50px;
 
             background:
-                rgba(184,120,91,.08);
+                rgba(184, 120, 91, .08);
 
-            color:var(--copper);
+            color: var(--copper);
 
-            font-size:.72rem;
-            font-weight:800;
+            font-size: .72rem;
+            font-weight: 800;
 
-            letter-spacing:1.2px;
+            letter-spacing: 1.2px;
 
-            text-transform:uppercase;
+            text-transform: uppercase;
         }
 
 
-        .page-hero h1{
-            font-family:Poppins,sans-serif;
+        .page-hero h1 {
+            font-family: Poppins, sans-serif;
 
             font-size:
-                clamp(2.2rem,5vw,4rem);
+                clamp(2.2rem, 5vw, 4rem);
 
-            line-height:1.15;
+            line-height: 1.15;
 
-            letter-spacing:-1.5px;
+            letter-spacing: -1.5px;
 
-            margin-bottom:17px;
+            margin-bottom: 17px;
         }
 
 
-        .gradient-text{
+        .gradient-text {
             background:
                 linear-gradient(
                     90deg,
@@ -433,34 +253,34 @@
                     var(--copper)
                 );
 
-            -webkit-background-clip:text;
-            background-clip:text;
+            -webkit-background-clip: text;
+            background-clip: text;
 
-            color:transparent;
+            color: transparent;
         }
 
 
-        .page-hero p{
-            max-width:700px;
+        .page-hero p {
+            max-width: 700px;
 
-            margin:auto;
+            margin: auto;
 
-            color:var(--gray);
+            color: var(--gray);
 
-            font-size:.92rem;
+            font-size: .92rem;
         }
 
 
-        .updated{
-            display:inline-flex;
-            align-items:center;
-            gap:7px;
+        .updated {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
 
-            margin-top:20px;
+            margin-top: 20px;
 
-            color:#82909d;
+            color: #82909d;
 
-            font-size:.72rem;
+            font-size: .72rem;
         }
 
 
@@ -468,20 +288,20 @@
            POLICY SECTION
         ========================= */
 
-        .policy-section{
-            padding:80px 0;
+        .policy-section {
+            padding: 80px 0;
         }
 
 
-        .policy-layout{
-            display:grid;
+        .policy-layout {
+            display: grid;
 
             grid-template-columns:
                 270px 1fr;
 
-            gap:35px;
+            gap: 35px;
 
-            align-items:start;
+            align-items: start;
         }
 
 
@@ -489,316 +309,255 @@
            SIDEBAR
         ========================= */
 
-        .policy-sidebar{
-            position:sticky;
-            top:105px;
+        .policy-sidebar {
+            position: sticky;
+            top: 25px;
 
-            padding:22px;
+            padding: 22px;
 
-            background:white;
+            background: white;
 
             border:
                 1px solid var(--border);
 
-            border-radius:18px;
+            border-radius: 18px;
 
             box-shadow:
                 0 12px 35px
-                rgba(15,42,66,.06);
+                rgba(15, 42, 66, .06);
         }
 
 
-        .policy-sidebar h3{
-            font-family:Poppins,sans-serif;
+        .policy-sidebar h3 {
+            font-family: Poppins, sans-serif;
 
-            font-size:.95rem;
+            font-size: .95rem;
 
-            margin-bottom:15px;
+            margin-bottom: 15px;
 
-            color:var(--blue);
+            color: var(--blue);
         }
 
 
-        .policy-sidebar a{
-            display:flex;
-            align-items:center;
-            gap:8px;
+        .policy-sidebar a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
 
-            padding:8px 0;
+            padding: 8px 0;
 
-            color:var(--gray);
+            color: var(--gray);
 
-            font-size:.75rem;
+            font-size: .75rem;
 
             border-bottom:
                 1px solid #eef2f5;
 
-            transition:.2s;
+            transition: .2s;
         }
 
 
-        .policy-sidebar a:last-child{
-            border-bottom:0;
+        .policy-sidebar a:last-child {
+            border-bottom: 0;
         }
 
 
-        .policy-sidebar a:hover{
-            color:var(--copper);
+        .policy-sidebar a:hover {
+            color: var(--copper);
 
-            padding-left:4px;
+            padding-left: 4px;
         }
 
 
-        .policy-sidebar i{
-            font-size:.62rem;
+        .policy-sidebar i {
+            font-size: .62rem;
         }
+
 
         /* =========================
-        TABLE OF CONTENTS TOGGLE
+           TABLE OF CONTENTS TOGGLE
         ========================= */
 
-        .toc-toggle{
-        display:none;
-        width:100%;
+        .toc-toggle {
+            display: none;
 
-        align-items:center;
-        justify-content:space-between;
+            width: 100%;
 
-        border:0;
-        background:transparent;
+            align-items: center;
+            justify-content: space-between;
 
-        color:var(--blue);
+            border: 0;
 
-        font-size:.85rem;
-        font-weight:800;
+            background: transparent;
 
-        cursor:pointer;
+            color: var(--blue);
 
-        padding:0;
+            font-size: .85rem;
+            font-weight: 800;
 
+            cursor: pointer;
+
+            padding: 0;
         }
 
-        .toc-toggle span{
-        display:flex;
-        align-items:center;
-        gap:9px;
+
+        .toc-toggle span {
+            display: flex;
+            align-items: center;
+            gap: 9px;
         }
 
-        .toc-toggle > span i{
-        font-size:.9rem;
+
+        .toc-toggle > span i {
+            font-size: .9rem;
         }
 
-        .toc-arrow{
-        font-size:.7rem;
 
-        transition:transform .25s ease;
+        .toc-arrow {
+            font-size: .7rem;
 
+            transition:
+                transform .25s ease;
         }
 
-        .policy-sidebar.toc-open .toc-arrow{
-        transform:rotate(180deg);
+
+        .policy-sidebar.toc-open .toc-arrow {
+            transform: rotate(180deg);
         }
 
-        .toc-content{
-        display:block;
+
+        .toc-content {
+            display: block;
         }
 
-        /* =========================
-        MOBILE TABLE OF CONTENTS
-        ========================= */
-
-        @media(max-width:950px){
-
-        .policy-sidebar{
-            position:relative;
-            top:auto;
-        }
-
-        .toc-toggle{
-            display:flex;
-        }
-
-        .toc-content{
-            display:none;
-
-            margin-top:18px;
-
-            padding-top:17px;
-
-            border-top:1px solid var(--border);
-
-            animation:tocSlide .25s ease;
-        }
-
-        .policy-sidebar.toc-open .toc-content{
-            display:block;
-        }
-
-        }
-
-        @keyframes tocSlide{
-
-        from{
-            opacity:0;
-            transform:translateY(-6px);
-        }
-
-        to{
-            opacity:1;
-            transform:translateY(0);
-        }
-
-        }
-
-        /* =========================
-        MOBILE SMALLER SPACING
-        ========================= */
-
-        @media(max-width:620px){
-
-        .policy-sidebar{
-            padding:16px 18px;
-            border-radius:15px;
-        }
-
-        .toc-toggle{
-            font-size:.82rem;
-        }
-
-        .toc-content{
-            margin-top:15px;
-            padding-top:15px;
-        }
-
-        }
 
         /* =========================
            POLICY CONTENT
         ========================= */
 
-        .policy-content{
-            padding:40px;
+        .policy-content {
+            padding: 40px;
 
-            background:white;
+            background: white;
 
             border:
                 1px solid var(--border);
 
-            border-radius:24px;
+            border-radius: 24px;
 
             box-shadow:
                 0 15px 45px
-                rgba(15,42,66,.06);
+                rgba(15, 42, 66, .06);
         }
 
 
-        .policy-intro{
-            padding:20px 22px;
+        .policy-intro {
+            padding: 20px 22px;
 
-            margin-bottom:32px;
+            margin-bottom: 32px;
 
             border-left:
                 4px solid var(--copper);
 
-            border-radius:10px;
+            border-radius: 10px;
 
-            background:#faf7f4;
+            background: #faf7f4;
 
-            color:var(--gray);
+            color: var(--gray);
 
-            font-size:.86rem;
+            font-size: .86rem;
         }
 
 
-        .policy-block{
-            scroll-margin-top:110px;
+        .policy-block {
+            scroll-margin-top: 30px;
 
-            padding-bottom:28px;
+            padding-bottom: 28px;
 
-            margin-bottom:30px;
+            margin-bottom: 30px;
 
             border-bottom:
                 1px solid var(--border);
         }
 
 
-        .policy-block:last-child{
-            padding-bottom:0;
-            margin-bottom:0;
+        .policy-block:last-child {
+            padding-bottom: 0;
+            margin-bottom: 0;
 
-            border-bottom:0;
+            border-bottom: 0;
         }
 
 
-        .policy-block h2{
-            display:flex;
-            align-items:center;
-            gap:11px;
+        .policy-block h2 {
+            display: flex;
+            align-items: center;
+            gap: 11px;
 
-            margin-bottom:13px;
+            margin-bottom: 13px;
 
-            font-family:Poppins,sans-serif;
+            font-family: Poppins, sans-serif;
 
-            color:var(--blue);
+            color: var(--blue);
 
             font-size:
-                clamp(1.15rem,2vw,1.4rem);
+                clamp(1.15rem, 2vw, 1.4rem);
 
-            line-height:1.3;
+            line-height: 1.3;
         }
 
 
-        .policy-block h2 span{
-            width:34px;
-            height:34px;
+        .policy-block h2 span {
+            width: 34px;
+            height: 34px;
 
-            display:grid;
-            place-items:center;
+            display: grid;
+            place-items: center;
 
-            flex-shrink:0;
+            flex-shrink: 0;
 
-            border-radius:10px;
+            border-radius: 10px;
 
-            background:#eef5fa;
+            background: #eef5fa;
 
-            color:var(--blue);
+            color: var(--blue);
 
-            font-size:.82rem;
+            font-size: .82rem;
         }
 
 
-        .policy-block p{
-            margin-bottom:11px;
+        .policy-block p {
+            margin-bottom: 11px;
 
-            color:var(--gray);
+            color: var(--gray);
 
-            font-size:.87rem;
+            font-size: .87rem;
         }
 
 
-        .policy-block p:last-child{
-            margin-bottom:0;
+        .policy-block p:last-child {
+            margin-bottom: 0;
         }
 
 
-        .policy-block ul{
-            margin:12px 0 0 20px;
+        .policy-block ul {
+            margin: 12px 0 0 20px;
 
-            color:var(--gray);
+            color: var(--gray);
 
-            font-size:.86rem;
+            font-size: .86rem;
         }
 
 
-        .policy-block li{
-            margin:7px 0;
+        .policy-block li {
+            margin: 7px 0;
 
-            padding-left:4px;
+            padding-left: 4px;
         }
 
 
-        .policy-block li::marker{
-            color:var(--copper);
+        .policy-block li::marker {
+            color: var(--copper);
         }
 
 
@@ -806,12 +565,12 @@
            CONTACT CARD
         ========================= */
 
-        .privacy-contact{
-            margin-top:5px;
+        .privacy-contact {
+            margin-top: 5px;
 
-            padding:25px;
+            padding: 25px;
 
-            border-radius:16px;
+            border-radius: 16px;
 
             background:
                 linear-gradient(
@@ -820,289 +579,79 @@
                     var(--dark-blue)
                 );
 
-            color:white;
+            color: white;
         }
 
 
-        .privacy-contact h3{
-            font-family:Poppins,sans-serif;
+        .privacy-contact h3 {
+            font-family: Poppins, sans-serif;
 
-            font-size:1.1rem;
+            font-size: 1.1rem;
 
-            margin-bottom:8px;
+            margin-bottom: 8px;
         }
 
 
-        .privacy-contact p{
-            color:rgba(255,255,255,.72);
+        .privacy-contact p {
+            color: rgba(255, 255, 255, .72);
 
-            margin-bottom:18px;
+            margin-bottom: 18px;
 
-            font-size:.8rem;
+            font-size: .8rem;
         }
 
 
-        .privacy-contact-grid{
-            display:grid;
+        .privacy-contact-grid {
+            display: grid;
 
             grid-template-columns:
-                repeat(3,1fr);
+                repeat(3, 1fr);
 
-            gap:12px;
+            gap: 12px;
         }
 
 
-        .privacy-contact-item{
-            display:flex;
-            align-items:center;
-            gap:10px;
+        .privacy-contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
 
-            padding:12px;
+            padding: 12px;
 
-            border-radius:11px;
+            border-radius: 11px;
 
             background:
-                rgba(255,255,255,.07);
+                rgba(255, 255, 255, .07);
         }
 
 
-        .privacy-contact-item i{
-            color:var(--light-copper);
+        .privacy-contact-item i {
+            color: var(--light-copper);
 
-            font-size:.85rem;
+            font-size: .85rem;
         }
 
 
-        .privacy-contact-item div{
-            display:flex;
-            flex-direction:column;
+        .privacy-contact-item div {
+            display: flex;
+            flex-direction: column;
         }
 
 
-        .privacy-contact-item span{
-            color:rgba(255,255,255,.5);
+        .privacy-contact-item span {
+            color: rgba(255, 255, 255, .5);
 
-            font-size:.6rem;
+            font-size: .6rem;
         }
 
 
         .privacy-contact-item a,
-        .privacy-contact-item strong{
-            color:white;
+        .privacy-contact-item strong {
+            color: white;
 
-            font-size:.7rem;
+            font-size: .7rem;
 
-            font-weight:600;
-        }
-
-
-/* ==================================================
-   FOOTER
-================================================== */
-
-footer{
-    padding:65px 0 25px;
-    background:#0b2438;
-    color:white;
-}
-
-.footer-grid{
-    display:grid;
-    grid-template-columns:1.3fr .8fr .9fr 1fr;
-    gap:45px;
-}
-
-.footer-brand img{
-    width:82px;
-    margin-bottom:13px;
-}
-
-.footer-brand h3,
-.footer-column h3{
-    font-family:Poppins,sans-serif;
-    font-size:1rem;
-    margin-bottom:15px;
-}
-
-.footer-brand p{
-    max-width:350px;
-    color:#aab9c5;
-    font-size:.8rem;
-    line-height:1.7;
-}
-
-.footer-column ul{
-    list-style:none;
-}
-
-.footer-column li{
-    margin:9px 0;
-    color:#aab9c5;
-    font-size:.78rem;
-}
-
-.footer-column a{
-    color:#aab9c5;
-    transition:.2s;
-}
-
-.footer-column a:hover{
-    color:white;
-}
-
-.footer-column li a{
-    display:flex;
-    align-items:center;
-    gap:8px;
-}
-
-.footer-column li a i{
-    color:var(--copper);
-    font-size:.62rem;
-}
-
-.footer-contact li{
-    display:flex;
-    gap:10px;
-    align-items:flex-start;
-}
-
-.footer-contact li > i{
-    width:32px;
-    height:32px;
-    flex-shrink:0;
-    display:grid;
-    place-items:center;
-    border-radius:8px;
-    background:rgba(255,255,255,.07);
-    color:var(--light-copper);
-}
-
-.footer-contact li div{
-    display:flex;
-    flex-direction:column;
-}
-
-.footer-contact li span{
-    color:#718696;
-    font-size:.65rem;
-}
-
-.footer-contact li a,
-.footer-contact li strong{
-    font-size:.75rem;
-    color:#d4dde3;
-}
-
-.footer-bottom{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:20px;
-    margin-top:40px;
-    padding-top:20px;
-    border-top:1px solid rgba(255,255,255,.1);
-    color:#718696;
-    font-size:.68rem;
-}
-
-.footer-bottom a{
-    color:var(--light-copper);
-}
-
-
-/* ==================================================
-   FOOTER RESPONSIVE
-================================================== */
-
-@media(max-width:950px){
-
-    .footer-grid{
-        grid-template-columns:1fr 1fr;
-        gap:40px 30px;
-    }
-
-}
-
-@media(max-width:620px){
-
-    .footer-grid{
-        grid-template-columns:1fr;
-        gap:32px;
-    }
-
-    .footer-brand{
-        text-align:center;
-    }
-
-    .footer-brand p{
-        margin:auto;
-    }
-
-    .footer-bottom{
-        flex-direction:column;
-        text-align:center;
-    }
-
-}
-
-
-        /* =========================
-           BACK TO TOP
-        ========================= */
-
-        .top{
-            position:fixed;
-
-            right:22px;
-            bottom:22px;
-
-            width:42px;
-            height:42px;
-
-            display:grid;
-            place-items:center;
-
-            border-radius:10px;
-
-            background:white;
-
-            color:var(--blue);
-
-            border:
-                1px solid var(--border);
-
-            box-shadow:
-                0 8px 25px
-                rgba(15,42,66,.12);
-
-            opacity:0;
-
-            pointer-events:none;
-
-            transform:translateY(10px);
-
-            transition:.3s;
-
-            z-index:900;
-        }
-
-
-        .top.show{
-            opacity:1;
-
-            pointer-events:auto;
-
-            transform:none;
-        }
-
-
-        .top:hover{
-            background:var(--blue);
-
-            color:white;
-
-            transform:translateY(-3px);
+            font-weight: 600;
         }
 
 
@@ -1110,88 +659,57 @@ footer{
            TABLET
         ========================= */
 
-        @media(max-width:950px){
+        @media(max-width: 950px) {
 
-            .nav-links{
-                position:absolute;
+            .policy-layout {
+                grid-template-columns: 1fr;
+            }
 
-                top:82px;
-                left:4%;
-                right:4%;
 
-                display:none;
+            .policy-sidebar {
+                position: relative;
+                top: auto;
+            }
 
-                flex-direction:column;
 
-                align-items:stretch;
+            .toc-toggle {
+                display: flex;
+            }
 
-                gap:3px;
 
-                padding:18px;
+            .toc-content {
+                display: none;
 
-                background:white;
+                margin-top: 18px;
 
-                border:
+                padding-top: 17px;
+
+                border-top:
                     1px solid var(--border);
 
-                border-radius:18px;
-
-                box-shadow:var(--shadow);
+                animation:
+                    tocSlide .25s ease;
             }
 
 
-            .nav-links.open{
-                display:flex;
+            .policy-sidebar.toc-open
+            .toc-content {
+                display: block;
             }
 
+        }
 
-            .nav-links a{
-                width:100%;
 
-                padding:11px;
+        @keyframes tocSlide {
+
+            from {
+                opacity: 0;
+                transform: translateY(-6px);
             }
 
-
-            .nav-links a::after{
-                bottom:4px;
-            }
-
-
-            .nav-cta{
-                display:none;
-            }
-
-
-            .menu{
-                display:block;
-            }
-
-
-            .policy-layout{
-                grid-template-columns:1fr;
-            }
-
-
-            .policy-sidebar{
-                position:relative;
-
-                top:auto;
-            }
-
-
-            .policy-sidebar nav{
-                display:grid;
-
-                grid-template-columns:
-                    repeat(2,1fr);
-
-                gap:0 20px;
-            }
-
-
-            .footer-grid{
-                grid-template-columns:
-                    1fr 1fr;
+            to {
+                opacity: 1;
+                transform: translateY(0);
             }
 
         }
@@ -1201,144 +719,95 @@ footer{
            MOBILE
         ========================= */
 
-        @media(max-width:620px){
+        @media(max-width: 620px) {
 
-            .container{
-                width:90%;
+            .container {
+                width: 90%;
             }
 
 
-            .nav{
-                min-height:72px;
+            .page-hero {
+                padding: 65px 0 55px;
             }
 
 
-            .logo img{
-                width:44px;
-                height:44px;
+            .page-hero h1 {
+                font-size: 2.15rem;
             }
 
 
-            .logo-text{
-                font-size:1.03rem;
+            .page-hero p {
+                font-size: .82rem;
             }
 
 
-            .logo small{
-                font-size:.34rem;
+            .policy-section {
+                padding: 50px 0;
             }
 
 
-            .nav-links{
-                top:72px;
+            .policy-sidebar {
+                padding: 16px 18px;
+
+                border-radius: 15px;
             }
 
 
-            .page-hero{
-                padding:65px 0 55px;
+            .toc-toggle {
+                font-size: .82rem;
             }
 
 
-            .page-hero h1{
-                font-size:2.15rem;
+            .toc-content {
+                margin-top: 15px;
+
+                padding-top: 15px;
             }
 
 
-            .page-hero p{
-                font-size:.82rem;
+            .policy-content {
+                padding: 25px 20px;
+
+                border-radius: 18px;
             }
 
 
-            .policy-section{
-                padding:50px 0;
+            .policy-intro {
+                padding: 16px;
+
+                font-size: .8rem;
             }
 
 
-            .policy-sidebar{
-                padding:18px;
+            .policy-block {
+                scroll-margin-top: 20px;
             }
 
 
-            .policy-sidebar nav{
-                grid-template-columns:1fr;
+            .policy-block h2 {
+                font-size: 1.08rem;
             }
 
 
-            .policy-content{
-                padding:25px 20px;
-
-                border-radius:18px;
-            }
-
-
-            .policy-intro{
-                padding:16px;
-
-                font-size:.8rem;
-            }
-
-
-            .policy-block{
-                scroll-margin-top:90px;
-            }
-
-
-            .policy-block h2{
-                font-size:1.08rem;
-            }
-
-
-            .policy-block h2 span{
-                width:31px;
-                height:31px;
+            .policy-block h2 span {
+                width: 31px;
+                height: 31px;
             }
 
 
             .policy-block p,
-            .policy-block ul{
-                font-size:.81rem;
+            .policy-block ul {
+                font-size: .81rem;
             }
 
 
-            .privacy-contact{
-                padding:20px;
+            .privacy-contact {
+                padding: 20px;
             }
 
 
-            .privacy-contact-grid{
-                grid-template-columns:1fr;
-            }
-
-
-            .footer-grid{
-                grid-template-columns:1fr;
-
-                gap:30px;
-            }
-
-
-            .footer-brand{
-                text-align:center;
-            }
-
-
-            .footer-brand p{
-                margin:auto;
-            }
-
-
-            .footer-bottom{
-                flex-direction:column;
-
-                text-align:center;
-
-                gap:7px;
-            }
-
-
-            .top{
-                right:15px;
-                bottom:15px;
+            .privacy-contact-grid {
+                grid-template-columns: 1fr;
             }
 
         }
@@ -1351,1098 +820,818 @@ footer{
 <body>
 
 
-<!-- =========================
-     HEADER
-========================= -->
-
-<header id="header">
-
-    <div class="container nav">
-
-        <a href="index.html" class="logo">
-
-            <img src="img/logo.png" alt="WebTechGhar Logo">
-
-            <div>
-
-                <div class="logo-text">
-                    WebTech<span>Ghar</span>
-                </div>
-
-                <small>
-                    THINK DIGITAL • BUILD BETTER
-                </small>
-
-            </div>
-
-        </a>
-
-
-        <nav
-            class="nav-links"
-            id="navLinks"
-        >
-
-            <a href="index.html">
-                Home
-            </a>
-
-            <a href="index.html#services">
-                Services
-            </a>
-
-            <a href="about.html">
-                About
-            </a>
-
-            <a href="index.html#pricing">
-                Pricing
-            </a>
-
-            <a href="index.html#faq">
-                FAQ
-            </a>
-
-            <a href="index.html#contact">
-                Contact
-            </a>
-
-        </nav>
-
-
-        <a
-            class="nav-cta"
-            href="https://wa.me/9779840976007?text=Hello%20WebTechGhar%2C%20I%20need%20a%20website."
-            target="_blank"
-            rel="noopener"
-        >
-
-            Start a Project
-
-            <i class="fas fa-arrow-up-right-from-square"></i>
-
-        </a>
-
-
-        <button
-            class="menu"
-            id="menu"
-            aria-label="Open menu"
-            aria-expanded="false"
-        >
-
-            <i class="fas fa-bars"></i>
-
-        </button>
-
-    </div>
-
-</header>
-
-
-
 <main>
 
 
-<!-- =========================
-     PAGE HERO
-========================= -->
+    <!-- =========================
+         PAGE HERO
+    ========================= -->
 
-<section class="page-hero">
+    <section class="page-hero">
 
-    <div class="container hero-content">
+        <div class="container hero-content">
 
-        <div class="eyebrow">
+            <div class="eyebrow">
 
-            <i class="fas fa-shield-halved"></i>
+                <i class="fas fa-shield-halved"></i>
 
-            Privacy & Security
-
-        </div>
-
-
-        <h1>
-
-            Privacy
-            <span class="gradient-text">
-                Policy
-            </span>
-
-        </h1>
-
-
-        <p>
-            Your privacy matters to us. This policy explains
-            what information WebTechGhar may collect, how we
-            use it, and the steps we take to protect it.
-        </p>
-
-
-        <div class="updated">
-
-            <i class="far fa-calendar"></i>
-
-            Last Updated: October 1, 2026
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================
-     PRIVACY POLICY
-========================= -->
-
-<section class="policy-section">
-
-    <div class="container policy-layout">
-
-
-        <!-- SIDEBAR -->
-
-                <aside class="policy-sidebar">
-
-        <button
-            class="toc-toggle"
-            id="tocToggle"
-            type="button"
-            aria-expanded="false"
-            aria-controls="tocMenu"
-        >
-            <span>
-                <i class="fas fa-list"></i>
-                Table of Contents
-            </span>
-
-            <i class="fas fa-chevron-down toc-arrow"></i>
-        </button>
-
-        <div class="toc-content" id="tocMenu">
-
-            <nav>
-
-                <a href="#information">
-                    <i class="fas fa-angle-right"></i>
-                    Information We Collect
-                </a>
-
-                <a href="#use">
-                    <i class="fas fa-angle-right"></i>
-                    How We Use Your Information
-                </a>
-
-                <a href="#whatsapp">
-                    <i class="fas fa-angle-right"></i>
-                    WhatsApp & External Services
-                </a>
-
-                <a href="#cookies">
-                    <i class="fas fa-angle-right"></i>
-                    Cookies
-                </a>
-
-                <a href="#sharing">
-                    <i class="fas fa-angle-right"></i>
-                    Information Sharing
-                </a>
-
-                <a href="#security">
-                    <i class="fas fa-angle-right"></i>
-                    Data Security
-                </a>
-
-                <a href="#third-party">
-                    <i class="fas fa-angle-right"></i>
-                    Third-Party Links
-                </a>
-
-                <a href="#children">
-                    <i class="fas fa-angle-right"></i>
-                    Children's Privacy
-                </a>
-
-                <a href="#rights">
-                    <i class="fas fa-angle-right"></i>
-                    Your Privacy Rights
-                </a>
-
-                <a href="#changes">
-                    <i class="fas fa-angle-right"></i>
-                    Policy Changes
-                </a>
-
-                <a href="#contact-us">
-                    <i class="fas fa-angle-right"></i>
-                    Contact Us
-                </a>
-
-            </nav>
-
-        </div>
-
-        </aside>
-
-        <!-- POLICY CONTENT -->
-
-        <article class="policy-content">
-
-            <div class="policy-intro">
-
-                <strong>
-                    Anand Hardware Trade Concern Pvt Ltd
-                </strong>
-                (“Anand Hardware”, “we”, “our”, or “us”) respects your privacy and is
-                committed to protecting the information you provide when using our website.
-
-                This Privacy Policy explains what information we may collect,
-                how we use it, and how we protect it.
+                Privacy & Security
 
             </div>
 
 
-            <!-- 01 -->
+            <h1>
 
-            <section
-                class="policy-block"
-                id="information"
-            >
+                Privacy
 
-                <h2>
+                <span class="gradient-text">
+                    Policy
+                </span>
+
+            </h1>
+
+
+            <p>
+                Your privacy matters to us. This policy explains
+                what information Anand Hardware may collect, how we
+                use it, and the steps we take to protect it.
+            </p>
+
+
+            <div class="updated">
+
+                <i class="far fa-calendar"></i>
+
+                Last Updated: October 1, 2026
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PRIVACY POLICY
+    ========================= -->
+
+    <section class="policy-section">
+
+        <div class="container policy-layout">
+
+
+            <!-- TABLE OF CONTENTS -->
+
+            <aside class="policy-sidebar">
+
+                <button
+                    class="toc-toggle"
+                    id="tocToggle"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="tocMenu"
+                >
+
                     <span>
-                        <i class="fas fa-database"></i>
+                        <i class="fas fa-list"></i>
+                        Table of Contents
                     </span>
 
-                    1. Information We Collect
-                </h2>
-
-                <p>
-                    We may collect information that you voluntarily provide when you contact us
-                    or communicate with us through our website.
-                </p>
-
-                <ul>
-                    <li>Your name</li>
-                    <li>Phone number</li>
-                    <li>Email address</li>
-                    <li>Product or service enquiries</li>
-                    <li>Messages or other information you choose to provide</li>
-                    <li>Any other information you voluntarily submit to us</li>
-                </ul>
-
-                <p>
-                    We may also receive basic technical information automatically when you visit
-                    our website, such as your browser type, device information, approximate
-                    location, and pages you visit. This information may be used to improve
-                    website performance and security.
-                </p>
+                    <i class="fas fa-chevron-down toc-arrow"></i>
 
-            </section>
+                </button>
 
 
-            <!-- 02 -->
+                <div
+                    class="toc-content"
+                    id="tocMenu"
+                >
 
-            <section
-                class="policy-block"
-                id="use"
-            >
-
-                <h2>
-                    <span>
-                        <i class="fas fa-bullseye"></i>
-                    </span>
+                    <nav>
 
-                    2. How We Use Your Information
-                </h2>
-
-                <p>
-                    We may use the information you provide to:
-                </p>
-
-                <ul>
-                    <li>Respond to your enquiries</li>
-                    <li>Provide product and availability information</li>
-                    <li>Communicate with you about your requests</li>
-                    <li>Assist with product or project-related enquiries</li>
-                    <li>Improve our website and services</li>
-                    <li>Maintain website security and prevent misuse</li>
-                    <li>Respond to legitimate business or legal requirements</li>
-                </ul>
+                        <a href="#information">
+                            <i class="fas fa-angle-right"></i>
+                            Information We Collect
+                        </a>
 
-                <p>
-                    We do not use your information for purposes unrelated to your interaction
-                    with Anand Hardware unless permitted or required by applicable law.
-                </p>
+                        <a href="#use">
+                            <i class="fas fa-angle-right"></i>
+                            How We Use Your Information
+                        </a>
 
-            </section>
+                        <a href="#whatsapp">
+                            <i class="fas fa-angle-right"></i>
+                            WhatsApp & External Services
+                        </a>
 
+                        <a href="#cookies">
+                            <i class="fas fa-angle-right"></i>
+                            Cookies
+                        </a>
 
-            <!-- 03 -->
+                        <a href="#sharing">
+                            <i class="fas fa-angle-right"></i>
+                            Information Sharing
+                        </a>
 
-            <section
-                class="policy-block"
-                id="whatsapp"
-            >
+                        <a href="#security">
+                            <i class="fas fa-angle-right"></i>
+                            Data Security
+                        </a>
 
-                <h2>
-                    <span>
-                        <i class="fab fa-whatsapp"></i>
-                    </span>
+                        <a href="#third-party">
+                            <i class="fas fa-angle-right"></i>
+                            Third-Party Links
+                        </a>
 
-                    3. WhatsApp and External Services
-                </h2>
+                        <a href="#children">
+                            <i class="fas fa-angle-right"></i>
+                            Children's Privacy
+                        </a>
 
-                <p>
-                    Our website may provide links to WhatsApp, Google Maps, email services,
-                    social media platforms, and other third-party services.
-                </p>
+                        <a href="#rights">
+                            <i class="fas fa-angle-right"></i>
+                            Your Privacy Rights
+                        </a>
 
-                <p>
-                    If you choose to use these services, your interaction may be subject to
-                    the privacy policies and terms of those third parties. Anand Hardware
-                    does not control how external services collect or process information
-                    after you leave our website.
-                </p>
+                        <a href="#changes">
+                            <i class="fas fa-angle-right"></i>
+                            Policy Changes
+                        </a>
 
-            </section>
+                        <a href="#contact-us">
+                            <i class="fas fa-angle-right"></i>
+                            Contact Us
+                        </a>
 
+                    </nav>
 
-            <!-- 04 -->
+                </div>
 
-            <section
-                class="policy-block"
-                id="cookies"
-            >
+            </aside>
 
-                <h2>
-                    <span>
-                        <i class="fas fa-cookie-bite"></i>
-                    </span>
 
-                    4. Cookies
-                </h2>
+            <!-- POLICY CONTENT -->
 
-                <p>
-                    Our website may use cookies or similar technologies to support basic
-                    website functionality, security, performance, and user experience.
-                </p>
+            <article class="policy-content">
 
-                <p>
-                    You can control or disable cookies through your browser settings.
-                    Some website features may not function properly if certain cookies
-                    are disabled.
-                </p>
 
-            </section>
+                <div class="policy-intro">
 
-
-            <!-- 05 -->
-
-            <section
-                class="policy-block"
-                id="sharing"
-            >
-
-                <h2>
-                    <span>
-                        <i class="fas fa-share-nodes"></i>
-                    </span>
-
-                    5. Information Sharing
-                </h2>
-
-                <p>
-                    We do not sell or rent your personal information.
-                </p>
-
-                <p>
-                    We may share information only when reasonably necessary to:
-                </p>
-
-                <ul>
-                    <li>Respond to your request</li>
-                    <li>Provide a service you have requested</li>
-                    <li>Protect our website, business, or users</li>
-                    <li>Comply with applicable laws or lawful requests</li>
-                </ul>
-
-            </section>
-
-
-            <!-- 06 -->
-
-            <section
-                class="policy-block"
-                id="security"
-            >
-
-                <h2>
-                    <span>
-                        <i class="fas fa-shield-halved"></i>
-                    </span>
-
-                    6. Data Security
-                </h2>
-
-                <p>
-                    We take reasonable measures to protect information submitted through
-                    our website from unauthorized access, misuse, alteration, or disclosure.
-                </p>
-
-                <p>
-                    However, no website or method of transmission over the internet can be
-                    guaranteed to be completely secure.
-                </p>
-
-            </section>
-
-
-            <!-- 07 -->
-
-            <section
-                class="policy-block"
-                id="third-party"
-            >
-
-                <h2>
-                    <span>
-                        <i class="fas fa-link"></i>
-                    </span>
-
-                    7. Third-Party Links
-                </h2>
-
-                <p>
-                    Our website may contain links to external websites and services.
-                </p>
-
-                <p>
-                    We are not responsible for the privacy practices, content, security,
-                    or policies of third-party websites. We recommend reviewing their
-                    privacy policies before providing personal information.
-                </p>
-
-            </section>
-
-
-            <!-- 08 -->
-
-            <section
-                class="policy-block"
-                id="children"
-            >
-
-                <h2>
-                    <span>
-                        <i class="fas fa-child"></i>
-                    </span>
-
-                    8. Children's Privacy
-                </h2>
-
-                <p>
-                    Our website is intended for general use and is not specifically directed
-                    toward children.
-                </p>
-
-                <p>
-                    We do not knowingly collect personal information from children through
-                    our website.
-                </p>
-
-            </section>
-
-
-            <!-- 09 -->
-
-            <section
-                class="policy-block"
-                id="rights"
-            >
-
-                <h2>
-                    <span>
-                        <i class="fas fa-user-check"></i>
-                    </span>
-
-                    9. Your Privacy Rights
-                </h2>
-
-                <p>
-                    Depending on applicable law, you may have rights regarding your personal
-                    information, including requesting access to, correction of, or deletion
-                    of information you have provided to us.
-                </p>
-
-                <p>
-                    To make a privacy-related request, please contact us using the details
-                    provided below.
-                </p>
-
-            </section>
-
-
-            <!-- 10 -->
-
-            <section
-                class="policy-block"
-                id="changes"
-            >
-
-                <h2>
-                    <span>
-                        <i class="fas fa-rotate"></i>
-                    </span>
-
-                    10. Changes to This Privacy Policy
-                </h2>
-
-                <p>
-                    We may update this Privacy Policy from time to time to reflect changes
-                    to our website, services, or applicable requirements.
-                </p>
-
-                <p>
-                    Any updates will be posted on this page with a revised “Last Updated” date.
-                </p>
-
-            </section>
-
-
-            <!-- 11 -->
-
-            <section
-                class="policy-block"
-                id="contact-us"
-            >
-
-                <h2>
-                    <span>
-                        <i class="fas fa-envelope"></i>
-                    </span>
-
-                    11. Contact Us
-                </h2>
-
-                <p>
-                    If you have questions about this Privacy Policy or how we handle your
-                    information, you can contact us at:
-                </p>
-
-                <div class="privacy-contact">
-
-                    <h3>
+                    <strong>
                         Anand Hardware Trade Concern Pvt Ltd
-                    </h3>
+                    </strong>
+
+                    (“Anand Hardware”, “we”, “our”, or “us”) respects
+                    your privacy and is committed to protecting the
+                    information you provide when using our website.
+
+                    This Privacy Policy explains what information we
+                    may collect, how we use it, and how we protect it.
+
+                </div>
+
+
+                <!-- 01 -->
+
+                <section
+                    class="policy-block"
+                    id="information"
+                >
+
+                    <h2>
+
+                        <span>
+                            <i class="fas fa-database"></i>
+                        </span>
+
+                        1. Information We Collect
+
+                    </h2>
+
 
                     <p>
-                        Main Road (South), Biratnagar, Nepal
+                        We may collect information that you voluntarily
+                        provide when you contact us or communicate with
+                        us through our website.
                     </p>
 
-                    <div class="privacy-contact-grid">
 
-                        <div class="privacy-contact-item">
-                            <i class="fas fa-phone"></i>
+                    <ul>
 
-                            <div>
-                                <span>Phone</span>
-                                <a href="tel:+9779852020251">
-                                    +977 9852020251
-                                </a>
-                            </div>
-                        </div>
+                        <li>Your name</li>
 
+                        <li>Phone number</li>
 
-                        <div class="privacy-contact-item">
-                            <i class="fas fa-phone-volume"></i>
+                        <li>Email address</li>
 
-                            <div>
-                                <span>Telephone</span>
-                                <strong>
-                                    021-474003 / 021-590307
-                                </strong>
-                            </div>
-                        </div>
+                        <li>Product or service enquiries</li>
+
+                        <li>
+                            Messages or other information you choose
+                            to provide
+                        </li>
+
+                        <li>
+                            Any other information you voluntarily
+                            submit to us
+                        </li>
+
+                    </ul>
 
 
-                        <div class="privacy-contact-item">
+                    <p>
+                        We may also receive basic technical information
+                        automatically when you visit our website, such
+                        as your browser type, device information,
+                        approximate location, and pages you visit.
+                        This information may be used to improve website
+                        performance and security.
+                    </p>
+
+                </section>
+
+
+                <!-- 02 -->
+
+                <section
+                    class="policy-block"
+                    id="use"
+                >
+
+                    <h2>
+
+                        <span>
+                            <i class="fas fa-bullseye"></i>
+                        </span>
+
+                        2. How We Use Your Information
+
+                    </h2>
+
+
+                    <p>
+                        We may use the information you provide to:
+                    </p>
+
+
+                    <ul>
+
+                        <li>Respond to your enquiries</li>
+
+                        <li>
+                            Provide product and availability
+                            information
+                        </li>
+
+                        <li>
+                            Communicate with you about your requests
+                        </li>
+
+                        <li>
+                            Assist with product or project-related
+                            enquiries
+                        </li>
+
+                        <li>
+                            Improve our website and services
+                        </li>
+
+                        <li>
+                            Maintain website security and prevent
+                            misuse
+                        </li>
+
+                        <li>
+                            Respond to legitimate business or legal
+                            requirements
+                        </li>
+
+                    </ul>
+
+
+                    <p>
+                        We do not use your information for purposes
+                        unrelated to your interaction with Anand
+                        Hardware unless permitted or required by
+                        applicable law.
+                    </p>
+
+                </section>
+
+
+                <!-- 03 -->
+
+                <section
+                    class="policy-block"
+                    id="whatsapp"
+                >
+
+                    <h2>
+
+                        <span>
+                            <i class="fab fa-whatsapp"></i>
+                        </span>
+
+                        3. WhatsApp and External Services
+
+                    </h2>
+
+
+                    <p>
+                        Our website may provide links to WhatsApp,
+                        Google Maps, email services, social media
+                        platforms, and other third-party services.
+                    </p>
+
+
+                    <p>
+                        If you choose to use these services, your
+                        interaction may be subject to the privacy
+                        policies and terms of those third parties.
+                        Anand Hardware does not control how external
+                        services collect or process information after
+                        you leave our website.
+                    </p>
+
+                </section>
+
+
+                <!-- 04 -->
+
+                <section
+                    class="policy-block"
+                    id="cookies"
+                >
+
+                    <h2>
+
+                        <span>
+                            <i class="fas fa-cookie-bite"></i>
+                        </span>
+
+                        4. Cookies
+
+                    </h2>
+
+
+                    <p>
+                        Our website may use cookies or similar
+                        technologies to support basic website
+                        functionality, security, performance, and
+                        user experience.
+                    </p>
+
+
+                    <p>
+                        You can control or disable cookies through
+                        your browser settings. Some website features
+                        may not function properly if certain cookies
+                        are disabled.
+                    </p>
+
+                </section>
+
+
+                <!-- 05 -->
+
+                <section
+                    class="policy-block"
+                    id="sharing"
+                >
+
+                    <h2>
+
+                        <span>
+                            <i class="fas fa-share-nodes"></i>
+                        </span>
+
+                        5. Information Sharing
+
+                    </h2>
+
+
+                    <p>
+                        We do not sell or rent your personal
+                        information.
+                    </p>
+
+
+                    <p>
+                        We may share information only when reasonably
+                        necessary to:
+                    </p>
+
+
+                    <ul>
+
+                        <li>Respond to your request</li>
+
+                        <li>
+                            Provide a service you have requested
+                        </li>
+
+                        <li>
+                            Protect our website, business, or users
+                        </li>
+
+                        <li>
+                            Comply with applicable laws or lawful
+                            requests
+                        </li>
+
+                    </ul>
+
+                </section>
+
+
+                <!-- 06 -->
+
+                <section
+                    class="policy-block"
+                    id="security"
+                >
+
+                    <h2>
+
+                        <span>
+                            <i class="fas fa-shield-halved"></i>
+                        </span>
+
+                        6. Data Security
+
+                    </h2>
+
+
+                    <p>
+                        We take reasonable measures to protect
+                        information submitted through our website
+                        from unauthorized access, misuse, alteration,
+                        or disclosure.
+                    </p>
+
+
+                    <p>
+                        However, no website or method of transmission
+                        over the internet can be guaranteed to be
+                        completely secure.
+                    </p>
+
+                </section>
+
+
+                <!-- 07 -->
+
+                <section
+                    class="policy-block"
+                    id="third-party"
+                >
+
+                    <h2>
+
+                        <span>
+                            <i class="fas fa-link"></i>
+                        </span>
+
+                        7. Third-Party Links
+
+                    </h2>
+
+
+                    <p>
+                        Our website may contain links to external
+                        websites and services.
+                    </p>
+
+
+                    <p>
+                        We are not responsible for the privacy
+                        practices, content, security, or policies of
+                        third-party websites. We recommend reviewing
+                        their privacy policies before providing
+                        personal information.
+                    </p>
+
+                </section>
+
+
+                <!-- 08 -->
+
+                <section
+                    class="policy-block"
+                    id="children"
+                >
+
+                    <h2>
+
+                        <span>
+                            <i class="fas fa-child"></i>
+                        </span>
+
+                        8. Children's Privacy
+
+                    </h2>
+
+
+                    <p>
+                        Our website is intended for general use and
+                        is not specifically directed toward children.
+                    </p>
+
+
+                    <p>
+                        We do not knowingly collect personal
+                        information from children through our website.
+                    </p>
+
+                </section>
+
+
+                <!-- 09 -->
+
+                <section
+                    class="policy-block"
+                    id="rights"
+                >
+
+                    <h2>
+
+                        <span>
+                            <i class="fas fa-user-check"></i>
+                        </span>
+
+                        9. Your Privacy Rights
+
+                    </h2>
+
+
+                    <p>
+                        Depending on applicable law, you may have
+                        rights regarding your personal information,
+                        including requesting access to, correction of,
+                        or deletion of information you have provided
+                        to us.
+                    </p>
+
+
+                    <p>
+                        To make a privacy-related request, please
+                        contact us using the details provided below.
+                    </p>
+
+                </section>
+
+
+                <!-- 10 -->
+
+                <section
+                    class="policy-block"
+                    id="changes"
+                >
+
+                    <h2>
+
+                        <span>
+                            <i class="fas fa-rotate"></i>
+                        </span>
+
+                        10. Changes to This Privacy Policy
+
+                    </h2>
+
+
+                    <p>
+                        We may update this Privacy Policy from time
+                        to time to reflect changes to our website,
+                        services, or applicable requirements.
+                    </p>
+
+
+                    <p>
+                        Any updates will be posted on this page with
+                        a revised “Last Updated” date.
+                    </p>
+
+                </section>
+
+
+                <!-- 11 -->
+
+                <section
+                    class="policy-block"
+                    id="contact-us"
+                >
+
+                    <h2>
+
+                        <span>
                             <i class="fas fa-envelope"></i>
+                        </span>
 
-                            <div>
-                                <span>Email</span>
-                                <a href="mailto:anandhardware.brt@gmail.com">
-                                    anandhardware.brt@gmail.com
-                                </a>
+                        11. Contact Us
+
+                    </h2>
+
+
+                    <p>
+                        If you have questions about this Privacy
+                        Policy or how we handle your information,
+                        you can contact us at:
+                    </p>
+
+
+                    <div class="privacy-contact">
+
+                        <h3>
+                            Anand Hardware Trade Concern Pvt Ltd
+                        </h3>
+
+
+                        <p>
+                            Main Road (South), Biratnagar, Nepal
+                        </p>
+
+
+                        <div class="privacy-contact-grid">
+
+
+                            <div class="privacy-contact-item">
+
+                                <i class="fas fa-phone"></i>
+
+                                <div>
+
+                                    <span>
+                                        Phone
+                                    </span>
+
+                                    <a href="tel:+9779852020251">
+                                        +977 9852020251
+                                    </a>
+
+                                </div>
+
                             </div>
-                        </div>
 
 
-                        <div class="privacy-contact-item">
-                            <i class="fas fa-location-dot"></i>
+                            <div class="privacy-contact-item">
 
-                            <div>
-                                <span>Branch Office</span>
-                                <strong>
-                                    Dharmabandh Road, Biratnagar
-                                </strong>
+                                <i class="fas fa-phone-volume"></i>
+
+                                <div>
+
+                                    <span>
+                                        Telephone
+                                    </span>
+
+                                    <strong>
+                                        021-474003 / 021-590307
+                                    </strong>
+
+                                </div>
+
                             </div>
-                        </div>
 
 
-                        <div class="privacy-contact-item">
-                            <i class="fas fa-phone"></i>
+                            <div class="privacy-contact-item">
 
-                            <div>
-                                <span>Branch Telephone</span>
-                                <strong>
-                                    021-474004
-                                </strong>
+                                <i class="fas fa-envelope"></i>
+
+                                <div>
+
+                                    <span>
+                                        Email
+                                    </span>
+
+                                    <a href="mailto:anandhardware.brt@gmail.com">
+                                        anandhardware.brt@gmail.com
+                                    </a>
+
+                                </div>
+
                             </div>
+
+
+                            <div class="privacy-contact-item">
+
+                                <i class="fas fa-location-dot"></i>
+
+                                <div>
+
+                                    <span>
+                                        Branch Office
+                                    </span>
+
+                                    <strong>
+                                        Dharmabandh Road, Biratnagar
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="privacy-contact-item">
+
+                                <i class="fas fa-phone"></i>
+
+                                <div>
+
+                                    <span>
+                                        Branch Telephone
+                                    </span>
+
+                                    <strong>
+                                        021-474004
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+
                         </div>
 
                     </div>
 
-                </div>
 
-                <p style="margin-top:20px;">
-                    By using the Anand Hardware website, you acknowledge that you have read
-                    and understood this Privacy Policy.
-                </p>
+                    <p style="margin-top:20px;">
 
-            </section>
+                        By using the Anand Hardware website, you
+                        acknowledge that you have read and understood
+                        this Privacy Policy.
 
-        </article>
+                    </p>
 
-    </div>
+                </section>
 
-</section>
+
+            </article>
+
+        </div>
+
+    </section>
 
 </main>
-
-
-
-<!-- ==================================================
-     FOOTER
-================================================== -->
-
-<footer>
-
-    <div class="container">
-
-        <div class="footer-grid">
-
-            <!-- BRAND -->
-
-            <div class="footer-brand">
-
-                <img
-                    src="img/footer.png"
-                    alt="WebTechGhar"
-                >
-
-                <h3>
-                    WebTechGhar
-                </h3>
-
-                <p>
-                    Think Digital • Build Better.
-                    Professional web development and
-                    digital solutions for modern businesses.
-                </p>
-
-            </div>
-
-
-            <!-- QUICK LINKS -->
-
-            <div class="footer-column">
-
-                <h3>
-                    Quick Links
-                </h3>
-
-                <ul>
-
-                    <li>
-                        <a href="index.html#home">
-                            <i class="fas fa-angle-right"></i>
-                            Home
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="index.html#services">
-                            <i class="fas fa-angle-right"></i>
-                            Services
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="index.html#about">
-                            <i class="fas fa-angle-right"></i>
-                            About
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="pricing.html">
-                            <i class="fas fa-angle-right"></i>
-                            Pricing
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="index.html#contact">
-                            <i class="fas fa-angle-right"></i>
-                            Contact
-                        </a>
-                    </li>
-
-                </ul>
-
-            </div>
-
-
-            <!-- SERVICES -->
-
-            <div class="footer-column">
-
-                <h3>
-                    Services
-                </h3>
-
-                <ul>
-
-                    <li>
-                        <a href="index.html#services">
-                            <i class="fas fa-angle-right"></i>
-                            Web Design
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="index.html#services">
-                            <i class="fas fa-angle-right"></i>
-                            Web Development
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="index.html#services">
-                            <i class="fas fa-angle-right"></i>
-                            E-Commerce
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="index.html#services">
-                            <i class="fas fa-angle-right"></i>
-                            Graphic Design
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="index.html#services">
-                            <i class="fas fa-angle-right"></i>
-                            SEO & Marketing
-                        </a>
-                    </li>
-
-                </ul>
-
-            </div>
-
-
-            <!-- CONTACT -->
-
-            <div class="footer-column footer-contact">
-
-                <h3>
-                    Contact
-                </h3>
-
-                <ul>
-
-                    <li>
-
-                        <i class="fas fa-phone"></i>
-
-                        <div>
-
-                            <span>
-                                Phone / WhatsApp
-                            </span>
-
-                            <a href="tel:+9779840976007">
-                                +977 9840976007
-                            </a>
-
-                        </div>
-
-                    </li>
-
-
-                    <li>
-
-                        <i class="fas fa-envelope"></i>
-
-                        <div>
-
-                            <span>
-                                Email
-                            </span>
-
-                            <a href="mailto:info@webtechghar.com">
-                                info@webtechghar.com
-                            </a>
-
-                        </div>
-
-                    </li>
-
-
-                    <li>
-
-                        <i class="fas fa-location-dot"></i>
-
-                        <div>
-
-                            <span>
-                                Location
-                            </span>
-
-                            <strong>
-                                Biratnagar, Nepal
-                            </strong>
-
-                        </div>
-
-                    </li>
-
-                </ul>
-
-            </div>
-
-        </div>
-
-
-        <div class="footer-bottom">
-
-            <p>
-                © <span id="year"></span>
-                <strong>WebTechGhar</strong>.
-                All rights reserved.
-            </p>
-
-            <p>
-
-                <a href="privacy-policy.html">
-                    Privacy Policy
-                </a>
-
-                &nbsp; • &nbsp;
-
-                <a href="terms-&-conditions.html">
-                    Terms & Conditions
-                </a>
-
-            </p>
-
-        </div>
-
-    </div>
-
-</footer>
-
-
-
-<!-- =========================
-     BACK TO TOP
-========================= -->
-
-<a
-    href="#"
-    class="top"
-    id="top"
-    aria-label="Back to top"
->
-
-    <i class="fas fa-arrow-up"></i>
-
-</a>
-
 
 
 <script>
 
     /* =========================
-       HEADER
+       TABLE OF CONTENTS
     ========================= */
 
-    const header =
-        document.getElementById("header");
+    const tocToggle =
+        document.getElementById("tocToggle");
 
-    const menu =
-        document.getElementById("menu");
+    const tocSidebar =
+        document.querySelector(".policy-sidebar");
 
-    const navLinks =
-        document.getElementById("navLinks");
-
-    const topBtn =
-        document.getElementById("top");
+    const tocLinks =
+        document.querySelectorAll(".toc-content a");
 
 
-    /* =========================
-       HEADER SCROLL
-    ========================= */
+    if (tocToggle) {
 
-    window.addEventListener("scroll", () => {
+        tocToggle.addEventListener("click", () => {
 
-        header.classList.toggle(
-            "scrolled",
-            window.scrollY > 20
-        );
+            const opened =
+                tocSidebar.classList.toggle("toc-open");
 
-
-        topBtn.classList.toggle(
-            "show",
-            window.scrollY > 400
-        );
-
-    });
-
-
-
-    /* =========================
-       MOBILE MENU
-    ========================= */
-
-    menu.addEventListener("click", () => {
-
-        const opened =
-            navLinks.classList.toggle("open");
-
-        menu.setAttribute(
-            "aria-expanded",
-            opened
-        );
-
-
-        menu.innerHTML = opened
-            ? '<i class="fas fa-xmark"></i>'
-            : '<i class="fas fa-bars"></i>';
-
-    });
-
-
-    document
-        .querySelectorAll(".nav-links a")
-        .forEach(link => {
-
-            link.addEventListener(
-                "click",
-                () => {
-
-                    navLinks.classList.remove(
-                        "open"
-                    );
-
-                    menu.setAttribute(
-                        "aria-expanded",
-                        "false"
-                    );
-
-                    menu.innerHTML =
-                        '<i class="fas fa-bars"></i>';
-
-                }
+            tocToggle.setAttribute(
+                "aria-expanded",
+                opened
             );
 
         });
 
-    /* =========================
-    TABLE OF CONTENTS
-    ========================= */
-
-    const tocToggle =
-    document.getElementById("tocToggle");
-
-    const tocSidebar =
-    document.querySelector(".policy-sidebar");
-
-    const tocLinks =
-    document.querySelectorAll(".toc-content a");
-
-    if(tocToggle){
-
-    tocToggle.addEventListener("click", () => {
-
-        const opened =
-            tocSidebar.classList.toggle("toc-open");
-
-        tocToggle.setAttribute(
-            "aria-expanded",
-            opened
-        );
-
-    });
-
     }
 
-    /* Close TOC after selecting a section */
+
+    /* =========================
+       CLOSE TOC AFTER SELECTION
+    ========================= */
 
     tocLinks.forEach(link => {
 
-    link.addEventListener("click", () => {
+        link.addEventListener("click", () => {
 
-        if(window.innerWidth <= 950){
+            if (window.innerWidth <= 950) {
 
-            tocSidebar.classList.remove(
-                "toc-open"
-            );
+                tocSidebar.classList.remove(
+                    "toc-open"
+                );
 
-            tocToggle.setAttribute(
-                "aria-expanded",
-                "false"
-            );
+                tocToggle.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
 
-        }
+            }
+
+        });
 
     });
-
-    });
-
-
-    /* =========================
-       BACK TO TOP
-    ========================= */
-
-    topBtn.addEventListener(
-        "click",
-        event => {
-
-            event.preventDefault();
-
-            window.scrollTo({
-                top:0,
-                behavior:"smooth"
-            });
-
-        }
-    );
-
-
-
-    /* =========================
-       YEAR
-    ========================= */
-
-    document
-        .getElementById("year")
-        .textContent =
-        new Date().getFullYear();
 
 </script>
 
