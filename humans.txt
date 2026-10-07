@@ -1,0 +1,36 @@
+TIMBER WOOD PVT. LTD.
+
+
+Website: https://bibekey.github.io/timberwood/
+Email: anandhardware.brt@gmail.com
+
+Developer: Bibek Rajbanshi
+Role: Web Designer & Front-End Developer
+Website: https://rajbanshibibek.com.np/
+Portfolio: https://rajbanshibibek.com.np/
+Location: Nepal
+
+
+
+Site Name: Anand Hardware Trade Concern
+Description: We provides quality hardware, tools, plumbing, electrical and construction supplies in Biratnagar, Nepal.
+
+Language: English
+Responsive: Yes
+SEO Optimized: Yes
+
+
+TECHNOLOGIES:
+HTML
+CSS
+JavaScript
+Font Awesome
+Google Fonts
+GitHub Pages
+
+
+Thank you for Anand Hardware Trade Concern.
+A trusted construction materials supplier, serving individuals and industries with quality products for decades.
+
+LAST UPDATE
+2026-10-07
