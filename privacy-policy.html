@@ -1,0 +1,2821 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="WebTechGhar Privacy Policy. Learn how we collect, use, protect and manage your information."
+    >
+
+    <meta
+        name="author"
+        content="WebTechGhar"
+    >
+
+    <meta
+        name="theme-color"
+        content="#174c73"
+    >
+
+    <title>Privacy Policy | WebTechGhar</title>
+
+    <link
+        rel="icon"
+        href="img/logo.png"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <style>
+
+        /* =========================
+           VARIABLES
+        ========================= */
+
+        :root{
+            --blue:#174c73;
+            --dark-blue:#0d3553;
+            --copper:#b8785b;
+            --light-copper:#d29a7e;
+
+            --text:#172331;
+            --gray:#667484;
+
+            --light-bg:#f6f9fc;
+            --white:#ffffff;
+
+            --border:#e5ebf1;
+
+            --green:#20b45d;
+
+            --shadow:
+                0 20px 60px rgba(15,42,66,.10);
+
+            --radius:20px;
+        }
+
+
+        /* =========================
+           RESET
+        ========================= */
+
+        *,
+        *::before,
+        *::after{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+
+            -webkit-tap-highlight-color:transparent;
+        }
+
+
+        html{
+            scroll-behavior:smooth;
+        }
+
+
+        body{
+            width:100%;
+            min-height:100vh;
+
+            font-family:Inter,Arial,sans-serif;
+
+            color:var(--text);
+            background:#f6f9fc;
+
+            line-height:1.7;
+
+            -webkit-font-smoothing:antialiased;
+            -moz-osx-font-smoothing:grayscale;
+
+            overflow-x:hidden;
+        }
+
+
+        a{
+            color:inherit;
+            text-decoration:none;
+        }
+
+
+        img{
+            max-width:100%;
+            display:block;
+        }
+
+
+        button,
+        input,
+        textarea{
+            font:inherit;
+        }
+
+
+        .container{
+            width:min(1160px,92%);
+            margin:auto;
+        }
+
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        header{
+            position:sticky;
+            top:0;
+            left:0;
+
+            width:100%;
+
+            z-index:1000;
+
+            background:rgba(255,255,255,.92);
+
+            backdrop-filter:blur(18px);
+
+            border-bottom:
+                1px solid rgba(229,235,241,.9);
+
+            transition:.3s;
+        }
+
+
+        header.scrolled{
+            box-shadow:
+                0 10px 35px rgba(15,42,66,.08);
+        }
+
+
+        .nav{
+            min-height:82px;
+
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+
+            gap:25px;
+        }
+
+
+        /* =========================
+           LOGO
+        ========================= */
+
+        .logo{
+            display:flex;
+            align-items:center;
+            gap:10px;
+
+            flex-shrink:0;
+        }
+
+
+        .logo img{
+            width:50px;
+            height:50px;
+
+            object-fit:contain;
+        }
+
+
+        .logo-text{
+            font-family:Poppins,sans-serif;
+
+            font-size:1.25rem;
+            font-weight:800;
+
+            color:var(--blue);
+        }
+
+
+        .logo-text span{
+            color:var(--copper);
+        }
+
+
+        .logo small{
+            display:block;
+
+            margin-top:-3px;
+
+            color:var(--gray);
+
+            font-size:.4rem;
+            font-weight:700;
+
+            letter-spacing:1px;
+        }
+
+
+        /* =========================
+           NAVIGATION
+        ========================= */
+
+        .nav-links{
+            display:flex;
+            align-items:center;
+            gap:25px;
+
+            font-size:.86rem;
+            font-weight:600;
+        }
+
+
+        .nav-links a{
+            position:relative;
+
+            padding:28px 0;
+
+            color:var(--text);
+
+            transition:.25s;
+        }
+
+
+        .nav-links a::after{
+            content:"";
+
+            position:absolute;
+
+            left:0;
+            bottom:20px;
+
+            width:0;
+            height:2px;
+
+            background:var(--copper);
+
+            transition:.25s;
+        }
+
+
+        .nav-links a:hover{
+            color:var(--blue);
+        }
+
+
+        .nav-links a:hover::after{
+            width:100%;
+        }
+
+
+        .nav-cta{
+            display:inline-flex;
+            align-items:center;
+            gap:8px;
+
+            padding:11px 17px;
+
+            border-radius:10px;
+
+            background:var(--blue);
+            color:white;
+
+            font-size:.78rem;
+            font-weight:800;
+
+            transition:.25s;
+        }
+
+
+        .nav-cta:hover{
+            background:var(--dark-blue);
+
+            transform:translateY(-2px);
+        }
+
+
+        .menu{
+            display:none;
+
+            border:0;
+            background:none;
+
+            color:var(--blue);
+
+            font-size:1.45rem;
+
+            cursor:pointer;
+        }
+
+
+        /* =========================
+           PAGE HERO
+        ========================= */
+
+        .page-hero{
+            position:relative;
+
+            padding:90px 0 80px;
+
+            overflow:hidden;
+
+            text-align:center;
+
+            background:
+                radial-gradient(
+                    circle at 90% 20%,
+                    rgba(184,120,91,.14),
+                    transparent 30%
+                ),
+
+                radial-gradient(
+                    circle at 10% 80%,
+                    rgba(23,76,115,.10),
+                    transparent 30%
+                ),
+
+                linear-gradient(
+                    135deg,
+                    #fff,
+                    #f5f9fc
+                );
+        }
+
+
+        .page-hero::before{
+            content:"";
+
+            position:absolute;
+
+            width:280px;
+            height:280px;
+
+            left:-120px;
+            top:20px;
+
+            border:1px solid
+                rgba(23,76,115,.10);
+
+            border-radius:50%;
+        }
+
+
+        .page-hero::after{
+            content:"";
+
+            position:absolute;
+
+            width:180px;
+            height:180px;
+
+            right:-70px;
+            bottom:-70px;
+
+            border:1px solid
+                rgba(184,120,91,.15);
+
+            border-radius:50%;
+        }
+
+
+        .hero-content{
+            position:relative;
+            z-index:2;
+
+            max-width:800px;
+
+            margin:auto;
+        }
+
+
+        .eyebrow{
+            display:inline-flex;
+            align-items:center;
+            gap:8px;
+
+            padding:7px 13px;
+
+            margin-bottom:17px;
+
+            border:
+                1px solid
+                rgba(184,120,91,.22);
+
+            border-radius:50px;
+
+            background:
+                rgba(184,120,91,.08);
+
+            color:var(--copper);
+
+            font-size:.72rem;
+            font-weight:800;
+
+            letter-spacing:1.2px;
+
+            text-transform:uppercase;
+        }
+
+
+        .page-hero h1{
+            font-family:Poppins,sans-serif;
+
+            font-size:
+                clamp(2.2rem,5vw,4rem);
+
+            line-height:1.15;
+
+            letter-spacing:-1.5px;
+
+            margin-bottom:17px;
+        }
+
+
+        .gradient-text{
+            background:
+                linear-gradient(
+                    90deg,
+                    var(--blue),
+                    var(--copper)
+                );
+
+            -webkit-background-clip:text;
+            background-clip:text;
+
+            color:transparent;
+        }
+
+
+        .page-hero p{
+            max-width:700px;
+
+            margin:auto;
+
+            color:var(--gray);
+
+            font-size:.92rem;
+        }
+
+
+        .updated{
+            display:inline-flex;
+            align-items:center;
+            gap:7px;
+
+            margin-top:20px;
+
+            color:#82909d;
+
+            font-size:.72rem;
+        }
+
+
+        /* =========================
+           POLICY SECTION
+        ========================= */
+
+        .policy-section{
+            padding:80px 0;
+        }
+
+
+        .policy-layout{
+            display:grid;
+
+            grid-template-columns:
+                270px 1fr;
+
+            gap:35px;
+
+            align-items:start;
+        }
+
+
+        /* =========================
+           SIDEBAR
+        ========================= */
+
+        .policy-sidebar{
+            position:sticky;
+            top:105px;
+
+            padding:22px;
+
+            background:white;
+
+            border:
+                1px solid var(--border);
+
+            border-radius:18px;
+
+            box-shadow:
+                0 12px 35px
+                rgba(15,42,66,.06);
+        }
+
+
+        .policy-sidebar h3{
+            font-family:Poppins,sans-serif;
+
+            font-size:.95rem;
+
+            margin-bottom:15px;
+
+            color:var(--blue);
+        }
+
+
+        .policy-sidebar a{
+            display:flex;
+            align-items:center;
+            gap:8px;
+
+            padding:8px 0;
+
+            color:var(--gray);
+
+            font-size:.75rem;
+
+            border-bottom:
+                1px solid #eef2f5;
+
+            transition:.2s;
+        }
+
+
+        .policy-sidebar a:last-child{
+            border-bottom:0;
+        }
+
+
+        .policy-sidebar a:hover{
+            color:var(--copper);
+
+            padding-left:4px;
+        }
+
+
+        .policy-sidebar i{
+            font-size:.62rem;
+        }
+
+        /* =========================
+        TABLE OF CONTENTS TOGGLE
+        ========================= */
+
+        .toc-toggle{
+        display:none;
+        width:100%;
+
+        align-items:center;
+        justify-content:space-between;
+
+        border:0;
+        background:transparent;
+
+        color:var(--blue);
+
+        font-size:.85rem;
+        font-weight:800;
+
+        cursor:pointer;
+
+        padding:0;
+
+        }
+
+        .toc-toggle span{
+        display:flex;
+        align-items:center;
+        gap:9px;
+        }
+
+        .toc-toggle > span i{
+        font-size:.9rem;
+        }
+
+        .toc-arrow{
+        font-size:.7rem;
+
+        transition:transform .25s ease;
+
+        }
+
+        .policy-sidebar.toc-open .toc-arrow{
+        transform:rotate(180deg);
+        }
+
+        .toc-content{
+        display:block;
+        }
+
+        /* =========================
+        MOBILE TABLE OF CONTENTS
+        ========================= */
+
+        @media(max-width:950px){
+
+        .policy-sidebar{
+            position:relative;
+            top:auto;
+        }
+
+        .toc-toggle{
+            display:flex;
+        }
+
+        .toc-content{
+            display:none;
+
+            margin-top:18px;
+
+            padding-top:17px;
+
+            border-top:1px solid var(--border);
+
+            animation:tocSlide .25s ease;
+        }
+
+        .policy-sidebar.toc-open .toc-content{
+            display:block;
+        }
+
+        }
+
+        @keyframes tocSlide{
+
+        from{
+            opacity:0;
+            transform:translateY(-6px);
+        }
+
+        to{
+            opacity:1;
+            transform:translateY(0);
+        }
+
+        }
+
+        /* =========================
+        MOBILE SMALLER SPACING
+        ========================= */
+
+        @media(max-width:620px){
+
+        .policy-sidebar{
+            padding:16px 18px;
+            border-radius:15px;
+        }
+
+        .toc-toggle{
+            font-size:.82rem;
+        }
+
+        .toc-content{
+            margin-top:15px;
+            padding-top:15px;
+        }
+
+        }
+
+        /* =========================
+           POLICY CONTENT
+        ========================= */
+
+        .policy-content{
+            padding:40px;
+
+            background:white;
+
+            border:
+                1px solid var(--border);
+
+            border-radius:24px;
+
+            box-shadow:
+                0 15px 45px
+                rgba(15,42,66,.06);
+        }
+
+
+        .policy-intro{
+            padding:20px 22px;
+
+            margin-bottom:32px;
+
+            border-left:
+                4px solid var(--copper);
+
+            border-radius:10px;
+
+            background:#faf7f4;
+
+            color:var(--gray);
+
+            font-size:.86rem;
+        }
+
+
+        .policy-block{
+            scroll-margin-top:110px;
+
+            padding-bottom:28px;
+
+            margin-bottom:30px;
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+
+        .policy-block:last-child{
+            padding-bottom:0;
+            margin-bottom:0;
+
+            border-bottom:0;
+        }
+
+
+        .policy-block h2{
+            display:flex;
+            align-items:center;
+            gap:11px;
+
+            margin-bottom:13px;
+
+            font-family:Poppins,sans-serif;
+
+            color:var(--blue);
+
+            font-size:
+                clamp(1.15rem,2vw,1.4rem);
+
+            line-height:1.3;
+        }
+
+
+        .policy-block h2 span{
+            width:34px;
+            height:34px;
+
+            display:grid;
+            place-items:center;
+
+            flex-shrink:0;
+
+            border-radius:10px;
+
+            background:#eef5fa;
+
+            color:var(--blue);
+
+            font-size:.82rem;
+        }
+
+
+        .policy-block p{
+            margin-bottom:11px;
+
+            color:var(--gray);
+
+            font-size:.87rem;
+        }
+
+
+        .policy-block p:last-child{
+            margin-bottom:0;
+        }
+
+
+        .policy-block ul{
+            margin:12px 0 0 20px;
+
+            color:var(--gray);
+
+            font-size:.86rem;
+        }
+
+
+        .policy-block li{
+            margin:7px 0;
+
+            padding-left:4px;
+        }
+
+
+        .policy-block li::marker{
+            color:var(--copper);
+        }
+
+
+        /* =========================
+           CONTACT CARD
+        ========================= */
+
+        .privacy-contact{
+            margin-top:5px;
+
+            padding:25px;
+
+            border-radius:16px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--blue),
+                    var(--dark-blue)
+                );
+
+            color:white;
+        }
+
+
+        .privacy-contact h3{
+            font-family:Poppins,sans-serif;
+
+            font-size:1.1rem;
+
+            margin-bottom:8px;
+        }
+
+
+        .privacy-contact p{
+            color:rgba(255,255,255,.72);
+
+            margin-bottom:18px;
+
+            font-size:.8rem;
+        }
+
+
+        .privacy-contact-grid{
+            display:grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap:12px;
+        }
+
+
+        .privacy-contact-item{
+            display:flex;
+            align-items:center;
+            gap:10px;
+
+            padding:12px;
+
+            border-radius:11px;
+
+            background:
+                rgba(255,255,255,.07);
+        }
+
+
+        .privacy-contact-item i{
+            color:var(--light-copper);
+
+            font-size:.85rem;
+        }
+
+
+        .privacy-contact-item div{
+            display:flex;
+            flex-direction:column;
+        }
+
+
+        .privacy-contact-item span{
+            color:rgba(255,255,255,.5);
+
+            font-size:.6rem;
+        }
+
+
+        .privacy-contact-item a,
+        .privacy-contact-item strong{
+            color:white;
+
+            font-size:.7rem;
+
+            font-weight:600;
+        }
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+footer{
+    padding:65px 0 25px;
+    background:#0b2438;
+    color:white;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:1.3fr .8fr .9fr 1fr;
+    gap:45px;
+}
+
+.footer-brand img{
+    width:82px;
+    margin-bottom:13px;
+}
+
+.footer-brand h3,
+.footer-column h3{
+    font-family:Poppins,sans-serif;
+    font-size:1rem;
+    margin-bottom:15px;
+}
+
+.footer-brand p{
+    max-width:350px;
+    color:#aab9c5;
+    font-size:.8rem;
+    line-height:1.7;
+}
+
+.footer-column ul{
+    list-style:none;
+}
+
+.footer-column li{
+    margin:9px 0;
+    color:#aab9c5;
+    font-size:.78rem;
+}
+
+.footer-column a{
+    color:#aab9c5;
+    transition:.2s;
+}
+
+.footer-column a:hover{
+    color:white;
+}
+
+.footer-column li a{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.footer-column li a i{
+    color:var(--copper);
+    font-size:.62rem;
+}
+
+.footer-contact li{
+    display:flex;
+    gap:10px;
+    align-items:flex-start;
+}
+
+.footer-contact li > i{
+    width:32px;
+    height:32px;
+    flex-shrink:0;
+    display:grid;
+    place-items:center;
+    border-radius:8px;
+    background:rgba(255,255,255,.07);
+    color:var(--light-copper);
+}
+
+.footer-contact li div{
+    display:flex;
+    flex-direction:column;
+}
+
+.footer-contact li span{
+    color:#718696;
+    font-size:.65rem;
+}
+
+.footer-contact li a,
+.footer-contact li strong{
+    font-size:.75rem;
+    color:#d4dde3;
+}
+
+.footer-bottom{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+    margin-top:40px;
+    padding-top:20px;
+    border-top:1px solid rgba(255,255,255,.1);
+    color:#718696;
+    font-size:.68rem;
+}
+
+.footer-bottom a{
+    color:var(--light-copper);
+}
+
+
+/* ==================================================
+   FOOTER RESPONSIVE
+================================================== */
+
+@media(max-width:950px){
+
+    .footer-grid{
+        grid-template-columns:1fr 1fr;
+        gap:40px 30px;
+    }
+
+}
+
+@media(max-width:620px){
+
+    .footer-grid{
+        grid-template-columns:1fr;
+        gap:32px;
+    }
+
+    .footer-brand{
+        text-align:center;
+    }
+
+    .footer-brand p{
+        margin:auto;
+    }
+
+    .footer-bottom{
+        flex-direction:column;
+        text-align:center;
+    }
+
+}
+
+
+        /* =========================
+           BACK TO TOP
+        ========================= */
+
+        .top{
+            position:fixed;
+
+            right:22px;
+            bottom:22px;
+
+            width:42px;
+            height:42px;
+
+            display:grid;
+            place-items:center;
+
+            border-radius:10px;
+
+            background:white;
+
+            color:var(--blue);
+
+            border:
+                1px solid var(--border);
+
+            box-shadow:
+                0 8px 25px
+                rgba(15,42,66,.12);
+
+            opacity:0;
+
+            pointer-events:none;
+
+            transform:translateY(10px);
+
+            transition:.3s;
+
+            z-index:900;
+        }
+
+
+        .top.show{
+            opacity:1;
+
+            pointer-events:auto;
+
+            transform:none;
+        }
+
+
+        .top:hover{
+            background:var(--blue);
+
+            color:white;
+
+            transform:translateY(-3px);
+        }
+
+
+        /* =========================
+           TABLET
+        ========================= */
+
+        @media(max-width:950px){
+
+            .nav-links{
+                position:absolute;
+
+                top:82px;
+                left:4%;
+                right:4%;
+
+                display:none;
+
+                flex-direction:column;
+
+                align-items:stretch;
+
+                gap:3px;
+
+                padding:18px;
+
+                background:white;
+
+                border:
+                    1px solid var(--border);
+
+                border-radius:18px;
+
+                box-shadow:var(--shadow);
+            }
+
+
+            .nav-links.open{
+                display:flex;
+            }
+
+
+            .nav-links a{
+                width:100%;
+
+                padding:11px;
+            }
+
+
+            .nav-links a::after{
+                bottom:4px;
+            }
+
+
+            .nav-cta{
+                display:none;
+            }
+
+
+            .menu{
+                display:block;
+            }
+
+
+            .policy-layout{
+                grid-template-columns:1fr;
+            }
+
+
+            .policy-sidebar{
+                position:relative;
+
+                top:auto;
+            }
+
+
+            .policy-sidebar nav{
+                display:grid;
+
+                grid-template-columns:
+                    repeat(2,1fr);
+
+                gap:0 20px;
+            }
+
+
+            .footer-grid{
+                grid-template-columns:
+                    1fr 1fr;
+            }
+
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media(max-width:620px){
+
+            .container{
+                width:90%;
+            }
+
+
+            .nav{
+                min-height:72px;
+            }
+
+
+            .logo img{
+                width:44px;
+                height:44px;
+            }
+
+
+            .logo-text{
+                font-size:1.03rem;
+            }
+
+
+            .logo small{
+                font-size:.34rem;
+            }
+
+
+            .nav-links{
+                top:72px;
+            }
+
+
+            .page-hero{
+                padding:65px 0 55px;
+            }
+
+
+            .page-hero h1{
+                font-size:2.15rem;
+            }
+
+
+            .page-hero p{
+                font-size:.82rem;
+            }
+
+
+            .policy-section{
+                padding:50px 0;
+            }
+
+
+            .policy-sidebar{
+                padding:18px;
+            }
+
+
+            .policy-sidebar nav{
+                grid-template-columns:1fr;
+            }
+
+
+            .policy-content{
+                padding:25px 20px;
+
+                border-radius:18px;
+            }
+
+
+            .policy-intro{
+                padding:16px;
+
+                font-size:.8rem;
+            }
+
+
+            .policy-block{
+                scroll-margin-top:90px;
+            }
+
+
+            .policy-block h2{
+                font-size:1.08rem;
+            }
+
+
+            .policy-block h2 span{
+                width:31px;
+                height:31px;
+            }
+
+
+            .policy-block p,
+            .policy-block ul{
+                font-size:.81rem;
+            }
+
+
+            .privacy-contact{
+                padding:20px;
+            }
+
+
+            .privacy-contact-grid{
+                grid-template-columns:1fr;
+            }
+
+
+            .footer-grid{
+                grid-template-columns:1fr;
+
+                gap:30px;
+            }
+
+
+            .footer-brand{
+                text-align:center;
+            }
+
+
+            .footer-brand p{
+                margin:auto;
+            }
+
+
+            .footer-bottom{
+                flex-direction:column;
+
+                text-align:center;
+
+                gap:7px;
+            }
+
+
+            .top{
+                right:15px;
+                bottom:15px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header id="header">
+
+    <div class="container nav">
+
+        <a
+            href="index.html"
+            class="logo"
+        >
+
+            <img
+                src="img/logo.png"
+                alt="WebTechGhar Logo"
+            >
+
+            <div>
+
+                <div class="logo-text">
+                    WebTech<span>Ghar</span>
+                </div>
+
+                <small>
+                    THINK DIGITAL • BUILD BETTER
+                </small>
+
+            </div>
+
+        </a>
+
+
+        <nav
+            class="nav-links"
+            id="navLinks"
+        >
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="index.html#services">
+                Services
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="index.html#pricing">
+                Pricing
+            </a>
+
+            <a href="index.html#faq">
+                FAQ
+            </a>
+
+            <a href="index.html#contact">
+                Contact
+            </a>
+
+        </nav>
+
+
+        <a
+            class="nav-cta"
+            href="https://wa.me/9779840976007?text=Hello%20WebTechGhar%2C%20I%20need%20a%20website."
+            target="_blank"
+            rel="noopener"
+        >
+
+            Start a Project
+
+            <i class="fas fa-arrow-up-right-from-square"></i>
+
+        </a>
+
+
+        <button
+            class="menu"
+            id="menu"
+            aria-label="Open menu"
+            aria-expanded="false"
+        >
+
+            <i class="fas fa-bars"></i>
+
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<main>
+
+
+<!-- =========================
+     PAGE HERO
+========================= -->
+
+<section class="page-hero">
+
+    <div class="container hero-content">
+
+        <div class="eyebrow">
+
+            <i class="fas fa-shield-halved"></i>
+
+            Privacy & Security
+
+        </div>
+
+
+        <h1>
+
+            Privacy
+            <span class="gradient-text">
+                Policy
+            </span>
+
+        </h1>
+
+
+        <p>
+            Your privacy matters to us. This policy explains
+            what information WebTechGhar may collect, how we
+            use it, and the steps we take to protect it.
+        </p>
+
+
+        <div class="updated">
+
+            <i class="far fa-calendar"></i>
+
+            Last Updated: August 27, 2026
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     PRIVACY POLICY
+========================= -->
+
+<section class="policy-section">
+
+    <div class="container policy-layout">
+
+
+        <!-- SIDEBAR -->
+
+                <aside class="policy-sidebar">
+
+        <button
+            class="toc-toggle"
+            id="tocToggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="tocMenu"
+        >
+            <span>
+                <i class="fas fa-list"></i>
+                Table of Contents
+            </span>
+
+            <i class="fas fa-chevron-down toc-arrow"></i>
+        </button>
+
+        <div class="toc-content" id="tocMenu">
+
+            <nav>
+
+                <a href="#information">
+                    <i class="fas fa-angle-right"></i>
+                    Information We Collect
+                </a>
+
+                <a href="#use">
+                    <i class="fas fa-angle-right"></i>
+                    How We Use Information
+                </a>
+
+                <a href="#contact-form">
+                    <i class="fas fa-angle-right"></i>
+                    Contact Form
+                </a>
+
+                <a href="#cookies">
+                    <i class="fas fa-angle-right"></i>
+                    Cookies
+                </a>
+
+                <a href="#third-party">
+                    <i class="fas fa-angle-right"></i>
+                    Third-Party Services
+                </a>
+
+                <a href="#sharing">
+                    <i class="fas fa-angle-right"></i>
+                    Information Sharing
+                </a>
+
+                <a href="#security">
+                    <i class="fas fa-angle-right"></i>
+                    Data Security
+                </a>
+
+                <a href="#retention">
+                    <i class="fas fa-angle-right"></i>
+                    Data Retention
+                </a>
+
+                <a href="#rights">
+                    <i class="fas fa-angle-right"></i>
+                    Your Privacy Choices
+                </a>
+
+                <a href="#children">
+                    <i class="fas fa-angle-right"></i>
+                    Children's Privacy
+                </a>
+
+                <a href="#links">
+                    <i class="fas fa-angle-right"></i>
+                    External Links
+                </a>
+
+                <a href="#changes">
+                    <i class="fas fa-angle-right"></i>
+                    Policy Changes
+                </a>
+
+                <a href="#contact-us">
+                    <i class="fas fa-angle-right"></i>
+                    Contact Us
+                </a>
+
+            </nav>
+
+        </div>
+
+        </aside>
+
+        <!-- POLICY CONTENT -->
+
+        <article class="policy-content">
+
+
+            <div class="policy-intro">
+
+                <strong>
+                    WebTechGhar
+                </strong>
+                ("we", "us", or "our") respects your privacy
+                and is committed to protecting the information
+                you provide when using our website and services.
+
+                This Privacy Policy explains how information
+                may be collected, used, stored and protected.
+
+            </div>
+
+
+
+            <!-- 01 -->
+
+            <section
+                class="policy-block"
+                id="information"
+            >
+
+                <h2>
+
+                    <span>
+                        <i class="fas fa-database"></i>
+                    </span>
+
+                    1. Information We Collect
+
+                </h2>
+
+
+                <p>
+                    When you contact WebTechGhar, request a
+                    quotation, or submit a project inquiry,
+                    we may collect information such as:
+                </p>
+
+
+                <ul>
+
+                    <li>
+                        Your name
+                    </li>
+
+                    <li>
+                        Email address
+                    </li>
+
+                    <li>
+                        Phone or WhatsApp number
+                    </li>
+
+                    <li>
+                        Business or organization name
+                    </li>
+
+                    <li>
+                        Service requirements
+                    </li>
+
+                    <li>
+                        Project details
+                    </li>
+
+                    <li>
+                        Budget or other information you
+                        voluntarily provide
+                    </li>
+
+                </ul>
+
+
+                <p>
+                    We may also receive limited technical
+                    information when you visit our website,
+                    such as browser type, device type,
+                    pages visited and general website usage.
+                </p>
+
+            </section>
+
+
+
+            <!-- 02 -->
+
+            <section
+                class="policy-block"
+                id="use"
+            >
+
+                <h2>
+
+                    <span>
+                        <i class="fas fa-bullseye"></i>
+                    </span>
+
+                    2. How We Use Your Information
+
+                </h2>
+
+
+                <p>
+                    Information you provide may be used to:
+                </p>
+
+
+                <ul>
+
+                    <li>
+                        Respond to inquiries and messages.
+                    </li>
+
+                    <li>
+                        Discuss website and digital service
+                        requirements.
+                    </li>
+
+                    <li>
+                        Prepare quotations and project proposals.
+                    </li>
+
+                    <li>
+                        Provide and manage our services.
+                    </li>
+
+                    <li>
+                        Communicate about ongoing projects.
+                    </li>
+
+                    <li>
+                        Provide technical support and maintenance.
+                    </li>
+
+                    <li>
+                        Improve our website and services.
+                    </li>
+
+                    <li>
+                        Protect the website against misuse,
+                        spam and security threats.
+                    </li>
+
+                </ul>
+
+            </section>
+
+
+
+            <!-- 03 -->
+
+            <section
+                class="policy-block"
+                id="contact-form"
+            >
+
+                <h2>
+
+                    <span>
+                        <i class="fas fa-paper-plane"></i>
+                    </span>
+
+                    3. Contact Form
+
+                </h2>
+
+
+                <p>
+                    Information submitted through our contact
+                    form may include your name, email address,
+                    phone number, selected service and project
+                    details.
+                </p>
+
+
+                <p>
+                    This information is used to respond to your
+                    project inquiry and communicate with you
+                    about the requested service.
+                </p>
+
+
+                <p>
+                    Please do not submit passwords, payment
+                    card information, government identification
+                    numbers or other highly sensitive information
+                    through the website contact form.
+                </p>
+
+            </section>
+
+
+
+            <!-- 04 -->
+
+            <section
+                class="policy-block"
+            >
+
+                <h2>
+
+                    <span>
+                        <i class="fab fa-whatsapp"></i>
+                    </span>
+
+                    4. Email & WhatsApp Communication
+
+                </h2>
+
+
+                <p>
+                    If you contact us by email or WhatsApp,
+                    we may retain information contained in
+                    those communications for customer service,
+                    project management, quotations and business
+                    records.
+                </p>
+
+
+                <p>
+                    We do not control the privacy practices of
+                    third-party communication platforms.
+                    Their own privacy policies and terms may
+                    apply when you use their services.
+                </p>
+
+            </section>
+
+
+
+            <!-- 05 -->
+
+            <section
+                class="policy-block"
+                id="cookies"
+            >
+
+                <h2>
+
+                    <span>
+                        <i class="fas fa-cookie-bite"></i>
+                    </span>
+
+                    5. Cookies & Similar Technologies
+
+                </h2>
+
+
+                <p>
+                    Our website may use cookies or similar
+                    technologies where necessary for website
+                    functionality, security, analytics or
+                    improving user experience.
+                </p>
+
+
+                <p>
+                    You can control or disable cookies through
+                    your browser settings. Some website features
+                    may not function properly if certain cookies
+                    are disabled.
+                </p>
+
+            </section>
+
+
+
+            <!-- 06 -->
+
+            <section
+                class="policy-block"
+                id="third-party"
+            >
+
+                <h2>
+
+                    <span>
+                        <i class="fas fa-plug"></i>
+                    </span>
+
+                    6. Analytics & Third-Party Services
+
+                </h2>
+
+
+                <p>
+                    We may use third-party services such as
+                    analytics, hosting, fonts, content delivery
+                    networks, payment services or other technical
+                    tools to operate and improve our website
+                    and services.
+                </p>
+
+
+                <p>
+                    These providers may process certain technical
+                    or usage information according to their own
+                    privacy policies.
+                </p>
+
+
+                <p>
+                    Where third-party services are used, we aim
+                    to use reputable providers and integrate
+                    services that are reasonably necessary for
+                    our website or business operations.
+                </p>
+
+            </section>
+
+
+
+            <!-- 07 -->
+
+            <section
+                class="policy-block"
+                id="sharing"
+            >
+
+                <h2>
+
+                    <span>
+                        <i class="fas fa-share-nodes"></i>
+                    </span>
+
+                    7. Information Sharing
+
+                </h2>
+
+
+                <p>
+                    We do not sell or rent your personal
+                    information.
+                </p>
+
+
+                <p>
+                    We may share information when reasonably
+                    necessary to:
+                </p>
+
+
+                <ul>
+
+                    <li>
+                        Provide a requested service.
+                    </li>
+
+                    <li>
+                        Work with service providers supporting
+                        our business.
+                    </li>
+
+                    <li>
+                        Operate website infrastructure and
+                        technical services.
+                    </li>
+
+                    <li>
+                        Comply with applicable laws or legal
+                        obligations.
+                    </li>
+
+                    <li>
+                        Protect our rights, website, users
+                        or business.
+                    </li>
+
+                    <li>
+                        Prevent fraud, abuse or security
+                        incidents.
+                    </li>
+
+                </ul>
+
+
+                <p>
+                    We aim to limit shared information to what
+                    is reasonably necessary for the relevant
+                    purpose.
+                </p>
+
+            </section>
+
+
+
+            <!-- 08 -->
+
+            <section
+                class="policy-block"
+                id="security"
+            >
+
+                <h2>
+
+                    <span>
+                        <i class="fas fa-shield-halved"></i>
+                    </span>
+
+                    8. Data Security
+
+                </h2>
+
+
+                <p>
+                    We take reasonable technical and
+                    organizational measures to protect
+                    information against unauthorized access,
+                    alteration, disclosure or destruction.
+                </p>
+
+
+                <p>
+                    However, no website, online communication
+                    method or electronic storage system can be
+                    guaranteed to be completely secure.
+                </p>
+
+            </section>
+
+
+
+            <!-- 09 -->
+
+            <section
+                class="policy-block"
+                id="retention"
+            >
+
+                <h2>
+
+                    <span>
+                        <i class="fas fa-clock"></i>
+                    </span>
+
+                    9. Data Retention
+
+                </h2>
+
+
+                <p>
+                    We may retain information for as long as
+                    reasonably necessary to:
+                </p>
+
+
+                <ul>
+
+                    <li>
+                        Respond to inquiries.
+                    </li>
+
+                    <li>
+                        Provide services.
+                    </li>
+
+                    <li>
+                        Manage client projects.
+                    </li>
+
+                    <li>
+                        Maintain business records.
+                    </li>
+
+                    <li>
+                        Resolve disputes.
+                    </li>
+
+                    <li>
+                        Meet legal, accounting or administrative
+                        requirements.
+                    </li>
+
+                </ul>
+
+
+                <p>
+                    When information is no longer reasonably
+                    required, we may delete or securely dispose
+                    of it.
+                </p>
+
+            </section>
+
+
+
+            <!-- 10 -->
+
+            <section
+                class="policy-block"
+                id="rights"
+            >
+
+                <h2>
+
+                    <span>
+                        <i class="fas fa-user-check"></i>
+                    </span>
+
+                    10. Your Privacy Choices
+
+                </h2>
+
+
+                <p>
+                    Depending on applicable law, you may have
+                    rights regarding your personal information,
+                    including requesting access to, correction
+                    of or deletion of information we hold about
+                    you.
+                </p>
+
+
+                <p>
+                    You may also ask us to stop using your
+                    information for certain purposes where
+                    applicable.
+                </p>
+
+
+                <p>
+                    To make a privacy-related request, contact
+                    us using the details provided below.
+                </p>
+
+            </section>
+
+
+
+            <!-- 11 -->
+
+            <section
+                class="policy-block"
+                id="children"
+            >
+
+                <h2>
+
+                    <span>
+                        <i class="fas fa-child"></i>
+                    </span>
+
+                    11. Children's Privacy
+
+                </h2>
+
+
+                <p>
+                    Our website and services are intended for
+                    general business and professional use.
+                </p>
+
+
+                <p>
+                    We do not knowingly collect personal
+                    information from children for purposes
+                    that are prohibited by applicable law.
+                </p>
+
+
+                <p>
+                    If you believe that a child has provided
+                    personal information to us, please contact
+                    us so we can review and take appropriate
+                    action.
+                </p>
+
+            </section>
+
+
+
+            <!-- 12 -->
+
+            <section
+                class="policy-block"
+                id="links"
+            >
+
+                <h2>
+
+                    <span>
+                        <i class="fas fa-link"></i>
+                    </span>
+
+                    12. External Links
+
+                </h2>
+
+
+                <p>
+                    Our website may contain links to third-party
+                    websites or services.
+                </p>
+
+
+                <p>
+                    We are not responsible for the privacy
+                    practices, content, security or policies
+                    of third-party websites. We recommend
+                    reviewing their privacy policies before
+                    providing them with personal information.
+                </p>
+
+            </section>
+
+
+
+            <!-- 13 -->
+
+            <section
+                class="policy-block"
+                id="changes"
+            >
+
+                <h2>
+
+                    <span>
+                        <i class="fas fa-rotate"></i>
+                    </span>
+
+                    13. Changes to This Privacy Policy
+
+                </h2>
+
+
+                <p>
+                    We may update this Privacy Policy from time
+                    to time to reflect changes in our services,
+                    website functionality, legal requirements
+                    or business practices.
+                </p>
+
+
+                <p>
+                    When changes are made, the updated policy
+                    will be published on this page with a revised
+                    "Last Updated" date.
+                </p>
+
+            </section>
+
+
+
+            <!-- 14 -->
+
+            <section
+                class="policy-block"
+                id="contact-us"
+            >
+
+                <h2>
+
+                    <span>
+                        <i class="fas fa-envelope"></i>
+                    </span>
+
+                    14. Contact Us
+
+                </h2>
+
+
+                <p>
+                    If you have questions about this Privacy
+                    Policy or how your information is handled,
+                    please contact WebTechGhar.
+                </p>
+
+
+                <div class="privacy-contact">
+
+                    <h3>
+                        WebTechGhar
+                    </h3>
+
+                    <p>
+                        Think Digital • Build Better.
+                        Professional web development and
+                        digital solutions from Nepal.
+                    </p>
+
+
+                    <div class="privacy-contact-grid">
+
+
+                        <div class="privacy-contact-item">
+
+                            <i class="fas fa-phone"></i>
+
+                            <div>
+
+                                <span>
+                                    Phone / WhatsApp
+                                </span>
+
+                                <a href="tel:+9779840976007">
+                                    +977 9840976007
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="privacy-contact-item">
+
+                            <i class="fas fa-envelope"></i>
+
+                            <div>
+
+                                <span>
+                                    Email
+                                </span>
+
+                                <a href="mailto:info@webtechghar.com">
+                                    info@webtechghar.com
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="privacy-contact-item">
+
+                            <i class="fas fa-location-dot"></i>
+
+                            <div>
+
+                                <span>
+                                    Location
+                                </span>
+
+                                <strong>
+                                    Biratnagar, Nepal
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        </article>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <!-- BRAND -->
+
+            <div class="footer-brand">
+
+                <img
+                    src="img/footer.png"
+                    alt="WebTechGhar"
+                >
+
+                <h3>
+                    WebTechGhar
+                </h3>
+
+                <p>
+                    Think Digital • Build Better.
+                    Professional web development and
+                    digital solutions for modern businesses.
+                </p>
+
+            </div>
+
+
+            <!-- QUICK LINKS -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="index.html#home">
+                            <i class="fas fa-angle-right"></i>
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#services">
+                            <i class="fas fa-angle-right"></i>
+                            Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#about">
+                            <i class="fas fa-angle-right"></i>
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="pricing.html">
+                            <i class="fas fa-angle-right"></i>
+                            Pricing
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#contact">
+                            <i class="fas fa-angle-right"></i>
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- SERVICES -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Services
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="index.html#services">
+                            <i class="fas fa-angle-right"></i>
+                            Web Design
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#services">
+                            <i class="fas fa-angle-right"></i>
+                            Web Development
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#services">
+                            <i class="fas fa-angle-right"></i>
+                            E-Commerce
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#services">
+                            <i class="fas fa-angle-right"></i>
+                            Graphic Design
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#services">
+                            <i class="fas fa-angle-right"></i>
+                            SEO & Marketing
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- CONTACT -->
+
+            <div class="footer-column footer-contact">
+
+                <h3>
+                    Contact
+                </h3>
+
+                <ul>
+
+                    <li>
+
+                        <i class="fas fa-phone"></i>
+
+                        <div>
+
+                            <span>
+                                Phone / WhatsApp
+                            </span>
+
+                            <a href="tel:+9779840976007">
+                                +977 9840976007
+                            </a>
+
+                        </div>
+
+                    </li>
+
+
+                    <li>
+
+                        <i class="fas fa-envelope"></i>
+
+                        <div>
+
+                            <span>
+                                Email
+                            </span>
+
+                            <a href="mailto:info@webtechghar.com">
+                                info@webtechghar.com
+                            </a>
+
+                        </div>
+
+                    </li>
+
+
+                    <li>
+
+                        <i class="fas fa-location-dot"></i>
+
+                        <div>
+
+                            <span>
+                                Location
+                            </span>
+
+                            <strong>
+                                Biratnagar, Nepal
+                            </strong>
+
+                        </div>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © <span id="year"></span>
+                <strong>WebTechGhar</strong>.
+                All rights reserved.
+            </p>
+
+            <p>
+
+                <a href="privacy-policy.html">
+                    Privacy Policy
+                </a>
+
+                &nbsp; • &nbsp;
+
+                <a href="terms-&-conditions.html">
+                    Terms & Conditions
+                </a>
+
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =========================
+     BACK TO TOP
+========================= -->
+
+<a
+    href="#"
+    class="top"
+    id="top"
+    aria-label="Back to top"
+>
+
+    <i class="fas fa-arrow-up"></i>
+
+</a>
+
+
+
+<script>
+
+    /* =========================
+       HEADER
+    ========================= */
+
+    const header =
+        document.getElementById("header");
+
+    const menu =
+        document.getElementById("menu");
+
+    const navLinks =
+        document.getElementById("navLinks");
+
+    const topBtn =
+        document.getElementById("top");
+
+
+    /* =========================
+       HEADER SCROLL
+    ========================= */
+
+    window.addEventListener("scroll", () => {
+
+        header.classList.toggle(
+            "scrolled",
+            window.scrollY > 20
+        );
+
+
+        topBtn.classList.toggle(
+            "show",
+            window.scrollY > 400
+        );
+
+    });
+
+
+
+    /* =========================
+       MOBILE MENU
+    ========================= */
+
+    menu.addEventListener("click", () => {
+
+        const opened =
+            navLinks.classList.toggle("open");
+
+        menu.setAttribute(
+            "aria-expanded",
+            opened
+        );
+
+
+        menu.innerHTML = opened
+            ? '<i class="fas fa-xmark"></i>'
+            : '<i class="fas fa-bars"></i>';
+
+    });
+
+
+    document
+        .querySelectorAll(".nav-links a")
+        .forEach(link => {
+
+            link.addEventListener(
+                "click",
+                () => {
+
+                    navLinks.classList.remove(
+                        "open"
+                    );
+
+                    menu.setAttribute(
+                        "aria-expanded",
+                        "false"
+                    );
+
+                    menu.innerHTML =
+                        '<i class="fas fa-bars"></i>';
+
+                }
+            );
+
+        });
+
+    /* =========================
+    TABLE OF CONTENTS
+    ========================= */
+
+    const tocToggle =
+    document.getElementById("tocToggle");
+
+    const tocSidebar =
+    document.querySelector(".policy-sidebar");
+
+    const tocLinks =
+    document.querySelectorAll(".toc-content a");
+
+    if(tocToggle){
+
+    tocToggle.addEventListener("click", () => {
+
+        const opened =
+            tocSidebar.classList.toggle("toc-open");
+
+        tocToggle.setAttribute(
+            "aria-expanded",
+            opened
+        );
+
+    });
+
+    }
+
+    /* Close TOC after selecting a section */
+
+    tocLinks.forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        if(window.innerWidth <= 950){
+
+            tocSidebar.classList.remove(
+                "toc-open"
+            );
+
+            tocToggle.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+        }
+
+    });
+
+    });
+
+
+    /* =========================
+       BACK TO TOP
+    ========================= */
+
+    topBtn.addEventListener(
+        "click",
+        event => {
+
+            event.preventDefault();
+
+            window.scrollTo({
+                top:0,
+                behavior:"smooth"
+            });
+
+        }
+    );
+
+
+
+    /* =========================
+       YEAR
+    ========================= */
+
+    document
+        .getElementById("year")
+        .textContent =
+        new Date().getFullYear();
+
+</script>
+
+
+</body>
+
+</html>
