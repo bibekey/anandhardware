@@ -27,7 +27,7 @@ RewriteRule ^public_html/?$ /about [R=301,L]
 # ONLY ALLOW anandhardware.com
 # ==========================================
 
-RewriteCond %{HTTP_HOST} !^(www\.)?anandhardware\.com\.np$ [NC]
+RewriteCond %{HTTP_HOST} !^(www\.)?anandhardware\.com$ [NC]
 RewriteCond %{HTTP_HOST} !^bibekey\.github\.io$ [NC]
 RewriteRule ^ https://rajbanshibibek.com.np [R=302,L]
 
